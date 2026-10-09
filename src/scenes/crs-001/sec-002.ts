@@ -14,7 +14,7 @@ export const sec002Scene: Scene = {
                     }, {
                         "id": "lab", "label": "Linux VM · proposed", "pattern": "service", "children": [
                             {
-                                "id": "identity", "label": "Ordinary user: maya", "sub": "Practice home: /home/maya", "pattern": "user", "icon": "user"
+                                "id": "identity", "label": "Ordinary user: maya", "sub": "Practice home: /home/maya", "pattern": "user", "icon": "users"
                             }, {
                                 "id": "checkpoint", "label": "Clean checkpoint", "sub": "Test restoration before changes", "pattern": "storage", "icon": "history"
                             }
@@ -33,11 +33,11 @@ export const sec002Scene: Scene = {
                 {
                     "id": "context-2-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
                         {
-                            "id": "context-2-0", "label": "Shared folders", "sub": "Connect guest actions to host files", "pattern": "storage", "icon": "none"
+                            "id": "context-2-0", "label": "Shared folders", "sub": "Connect guest actions to host files", "pattern": "storage", "icon": "folder"
                         }, {
-                            "id": "context-2-1", "label": "Network access", "sub": "May reach other systems", "pattern": "service", "icon": "none"
+                            "id": "context-2-1", "label": "Network access", "sub": "May reach other systems", "pattern": "service", "icon": "network"
                         }, {
-                            "id": "context-2-2", "label": "Restore route", "sub": "Test the clean checkpoint", "pattern": "storage", "icon": "none"
+                            "id": "context-2-2", "label": "Restore route", "sub": "Test the clean checkpoint", "pattern": "storage", "icon": "history"
                         }
                     ]
                 }, {

@@ -21,11 +21,11 @@ export const sec003Scene: Scene = {
                 {
                     "id": "context-3-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
                         {
-                            "id": "context-3-0", "label": "Terminal", "sub": "Text input and display", "pattern": "user", "icon": "none"
+                            "id": "context-3-0", "label": "Terminal", "sub": "Text input and display", "pattern": "user", "icon": "monitor"
                         }, {
-                            "id": "context-3-1", "label": "Bash shell", "sub": "Interprets the submitted line", "pattern": "user", "icon": "none"
+                            "id": "context-3-1", "label": "Bash shell", "sub": "Interprets the submitted line", "pattern": "user", "icon": "terminal"
                         }, {
-                            "id": "context-3-2", "label": "Command / result", "sub": "Output, errors, then prompt", "pattern": "service", "icon": "none"
+                            "id": "context-3-2", "label": "Command / result", "sub": "Output, errors, then prompt", "pattern": "service", "icon": "file"
                         }
                     ]
                 }, {

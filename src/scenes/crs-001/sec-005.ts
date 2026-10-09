@@ -31,11 +31,11 @@ export const sec005Scene: Scene = {
                 {
                     "id": "context-5-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
                         {
-                            "id": "context-5-0", "label": "Tool help", "sub": "ls --help · short usage", "pattern": "user", "icon": "none"
+                            "id": "context-5-0", "label": "Tool help", "sub": "ls --help · short usage", "pattern": "user", "icon": "terminal"
                         }, {
-                            "id": "context-5-1", "label": "Manual collection", "sub": "man 1 ls · user-command page", "pattern": "service", "icon": "none"
+                            "id": "context-5-1", "label": "Manual collection", "sub": "man 1 ls · user-command page", "pattern": "service", "icon": "scroll"
                         }, {
-                            "id": "context-5-2", "label": "Shell builtin", "sub": "help cd · Bash reference", "pattern": "user", "icon": "none"
+                            "id": "context-5-2", "label": "Shell builtin", "sub": "help cd · Bash reference", "pattern": "user", "icon": "terminal"
                         }
                     ]
                 }, {

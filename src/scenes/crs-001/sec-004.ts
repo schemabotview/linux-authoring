@@ -14,9 +14,9 @@ export const sec004Scene: Scene = {
                     }
                 ]), mapBand('io', [
                     {
-                        "id": "root", "label": "/", "sub": "Filesystem root", "pattern": "storage", "children": [
+                        "id": "root", "icon": "folder", "label": "/", "sub": "Filesystem root", "pattern": "storage", "children": [
                             {
-                                "id": "home", "label": "/home", "pattern": "storage", "children": [
+                                "id": "home", "icon": "folder", "label": "/home", "pattern": "storage", "children": [
                                     {
                                         "id": "maya", "label": "/home/maya", "sub": "Working directory", "pattern": "user", "icon": "folder"
                                     }
@@ -35,11 +35,11 @@ export const sec004Scene: Scene = {
                 {
                     "id": "context-4-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
                         {
-                            "id": "context-4-0", "label": "Absolute path", "sub": "/home/maya · starts at /", "pattern": "storage", "icon": "none"
+                            "id": "context-4-0", "label": "Absolute path", "sub": "/home/maya · starts at /", "pattern": "storage", "icon": "folder"
                         }, {
-                            "id": "context-4-1", "label": "Relative path", "sub": ".. · starts at working directory", "pattern": "user", "icon": "none"
+                            "id": "context-4-1", "label": "Relative path", "sub": ".. · starts at working directory", "pattern": "user", "icon": "folder"
                         }, {
-                            "id": "context-4-2", "label": "Check location", "sub": "pwd · inspect after movement", "pattern": "service", "icon": "none"
+                            "id": "context-4-2", "label": "Check location", "sub": "pwd · inspect after movement", "pattern": "service", "icon": "search"
                         }
                     ]
                 }, {

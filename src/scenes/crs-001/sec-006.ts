@@ -33,11 +33,11 @@ export const sec006Scene: Scene = {
                 {
                     "id": "context-6-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
                         {
-                            "id": "context-6-0", "label": "Kernel", "sub": "uname -s / uname -r", "pattern": "service", "icon": "none"
+                            "id": "context-6-0", "label": "Kernel", "sub": "uname -s / uname -r", "pattern": "service", "icon": "cpu"
                         }, {
-                            "id": "context-6-1", "label": "Distribution", "sub": "ID / VERSION_ID in os-release", "pattern": "group", "icon": "none"
+                            "id": "context-6-1", "label": "Distribution", "sub": "ID / VERSION_ID in os-release", "pattern": "group", "icon": "layers"
                         }, {
-                            "id": "context-6-2", "label": "Identity", "sub": "id · user and groups", "pattern": "user", "icon": "none"
+                            "id": "context-6-2", "label": "Identity", "sub": "id · user and groups", "pattern": "user", "icon": "users"
                         }
                     ]
                 }, {

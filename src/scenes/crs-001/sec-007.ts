@@ -27,11 +27,11 @@ export const sec007Scene: Scene = {
                 {
                     "id": "context-7-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
                         {
-                            "id": "context-7-0", "label": "System and identity", "sub": "Host or lab? Which user?", "pattern": "user", "icon": "none"
+                            "id": "context-7-0", "label": "System and identity", "sub": "Host or lab? Which user?", "pattern": "user", "icon": "users"
                         }, {
-                            "id": "context-7-1", "label": "Location and target", "sub": "Which directory? Which path?", "pattern": "storage", "icon": "none"
+                            "id": "context-7-1", "label": "Location and target", "sub": "Which directory? Which path?", "pattern": "storage", "icon": "folder"
                         }, {
-                            "id": "context-7-2", "label": "Documentation", "sub": "Which command and implementation?", "pattern": "service", "icon": "none"
+                            "id": "context-7-2", "label": "Documentation", "sub": "Which command and implementation?", "pattern": "service", "icon": "scroll"
                         }
                     ]
                 }, {
