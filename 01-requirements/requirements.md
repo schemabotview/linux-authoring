@@ -1,8 +1,8 @@
 # Linux course requirements
 
 - Course: Linux — foundations through practical administration and troubleshooting
-- Artifact version: 0.1
-- Status: Draft — derived from the confirmed brief; detailed requirements await review
+- Artifact version: 1.0
+- Status: Approved by the user on 2026-10-09
 - Date: 2026-10-09
 - Input: `course-brief.md` version 1.0, confirmed by the user on 2026-10-09
 - Authoring instructions: `ai-prompt.md`, repository baseline `a855c20`
@@ -193,5 +193,5 @@ Language and delivery assumptions should be confirmed during requirements review
 - [x] Requirements draft generated from the confirmed brief.
 - [x] Outcome IDs, requirement IDs, acceptance evidence, and risks defined.
 - [x] Deferred decisions and unverified technical versions identified.
-- [ ] Detailed requirements reviewed and approved.
-- [ ] Proceed to course planning using the reviewed requirements revision.
+- [x] Detailed requirements reviewed and approved by the user on 2026-10-09.
+- [x] Handed off to course planning using requirements revision 1.0.

@@ -4,7 +4,7 @@ Linux course authoring project, based on the reusable seven-stage course authori
 
 ## Current status
 
-Stage 01: the Linux course brief is confirmed. The requirements draft is available at `01-requirements/requirements.md` for review before course planning.
+Stage 01 requirements are approved. Stage 02 course planning is drafted: see `02-planning/course-plan.md` for 10 modules, 24 lessons, assessments, and the production backlog. The plan awaits review before design.
 
 ## Workflow
 
