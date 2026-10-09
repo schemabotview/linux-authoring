@@ -32,7 +32,7 @@ Current source of truth for rendered content is the typed section and scene file
 
 ## Dependencies and configuration
 
-The app pins published @graphlearning/flow 1.2.0 and a local ui-shell 0.10.0 package snapshot (`vendor/graphlearning-shell-0.10.0.tgz`). The latter supplies native concept/course-title headers and wrapping; no Vite header adapter or local header CSS remains. No registry publication occurred. Source changes belong to the shared ui-shell repository. The archive makes Linux installs independent of a sibling checkout; package-lock.json records its integrity. Use npm ci to reproduce it. Replace the snapshot with an exact registry version only after a separately authorized release.
+The app pins published @graphlearning/flow 1.2.0 and @graphlearning/shell 0.8.0. The repo-local course-header adapter and wrapping stylesheet are restored after the user requested reverting shared-shell header changes. No local 0.10.0 archive remains. package-lock.json captures installed dependencies; use npm ci to reproduce them.
 
 The development port is 5177. The production base is /linux-authoring/, for the intended repository GitHub Pages path. Deployment has not been configured or performed. Change base and publishing identity together if the deployment target changes.
 
