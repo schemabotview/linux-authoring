@@ -1,0 +1,423 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "id": "sec-001",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 700,
+        "diagramHeight": 764,
+        "widthUse": 84,
+        "heightUse": 85
+      },
+      "title": "Understanding Linux",
+      "links": 0,
+      "nodes": 18,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 77,
+        "bottom": 823,
+        "height": 745,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 709,
+        "diagramHeight": 672,
+        "widthUse": 85,
+        "heightUse": 75
+      },
+      "title": "Know the boundary",
+      "links": 0,
+      "nodes": 12,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 91,
+        "bottom": 809,
+        "height": 719,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 709,
+        "diagramHeight": 532,
+        "widthUse": 85,
+        "heightUse": 59
+      },
+      "title": "Terminal \u2192 shell \u2192 command",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 129,
+        "bottom": 771,
+        "height": 643,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 709,
+        "diagramHeight": 628,
+        "widthUse": 85,
+        "heightUse": 70
+      },
+      "title": "Where am I looking?",
+      "links": 0,
+      "nodes": 13,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 100,
+        "bottom": 800,
+        "height": 699,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 709,
+        "diagramHeight": 532,
+        "widthUse": 85,
+        "heightUse": 59
+      },
+      "title": "Ask the right reference",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 116,
+        "bottom": 784,
+        "height": 668,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 709,
+        "diagramHeight": 547,
+        "widthUse": 85,
+        "heightUse": 61
+      },
+      "title": "Identify before acting",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 91,
+        "bottom": 809,
+        "height": 717,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 709,
+        "diagramHeight": 507,
+        "widthUse": 85,
+        "heightUse": 56
+      },
+      "title": "Pause \u2192 read \u2192 verify",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 96,
+        "bottom": 804,
+        "height": 708,
+        "viewportHeight": 900
+      },
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-001",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 363,
+        "widthUse": 85,
+        "heightUse": 54
+      },
+      "title": "Understanding Linux",
+      "links": 0,
+      "nodes": 18,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 123,
+        "bottom": 721,
+        "height": 598,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 315,
+        "widthUse": 85,
+        "heightUse": 47
+      },
+      "title": "Know the boundary",
+      "links": 0,
+      "nodes": 12,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 144,
+        "bottom": 700,
+        "height": 556,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 249,
+        "widthUse": 85,
+        "heightUse": 37
+      },
+      "title": "Terminal \u2192 shell \u2192 command",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 141,
+        "bottom": 703,
+        "height": 562,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 294,
+        "widthUse": 85,
+        "heightUse": 44
+      },
+      "title": "Where am I looking?",
+      "links": 0,
+      "nodes": 13,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 152,
+        "bottom": 692,
+        "height": 540,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 249,
+        "widthUse": 85,
+        "heightUse": 37
+      },
+      "title": "Ask the right reference",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 162,
+        "bottom": 682,
+        "height": 520,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 256,
+        "widthUse": 85,
+        "heightUse": 38
+      },
+      "title": "Identify before acting",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 134,
+        "bottom": 710,
+        "height": 577,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 237,
+        "widthUse": 85,
+        "heightUse": 35
+      },
+      "title": "Pause \u2192 read \u2192 verify",
+      "links": 0,
+      "nodes": 9,
+      "overflow": false,
+      "slideGeometry": {
+        "top": 147,
+        "bottom": 697,
+        "height": 549,
+        "viewportHeight": 844
+      },
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    }
+  ],
+  "overview": [
+    {
+      "width": 1440,
+      "height": 900,
+      "nodes": 29,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 1728,
+      "nodes": 29,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "nodes": 29,
+      "overflow": false
+    }
+  ],
+  "poster": {
+    "status": 200,
+    "contentType": "image/png"
+  },
+  "date": "2026-10-09",
+  "scope": "Remove all learner-facing links from SEC-001\u2013007 slides; retain authoring sources"
+}
