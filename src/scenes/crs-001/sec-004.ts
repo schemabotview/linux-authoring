@@ -1,9 +1,42 @@
 import type { Scene } from '@graphlearning/flow'
 
-// Placeholder geometry only; replace with the canonical design for this section.
+// Declarative relationships; the installed engine computes all positions.
 export const sec004Scene: Scene = {
-  id: "crs-001-sec-004-scene",
-  flow: 'TB',
-  nodes: [{ id: 'placeholder', label: "SEC-004", sub: 'Scene awaiting design', pattern: 'service', icon: 'terminal' }],
-  edges: [],
+  "id": "crs-001-sec-004-scene",
+  "flow": "TB",
+  "nodes": [
+    {
+      "id": "root",
+      "label": "/",
+      "sub": "Filesystem root",
+      "pattern": "service",
+      "icon": "none"
+    },
+    {
+      "id": "home",
+      "label": "/home",
+      "sub": "Example parent",
+      "pattern": "service",
+      "icon": "none"
+    },
+    {
+      "id": "maya",
+      "label": "/home/maya",
+      "sub": "Example home",
+      "pattern": "service",
+      "icon": "none"
+    }
+  ],
+  "edges": [
+    {
+      "source": "root",
+      "target": "home",
+      "label": "contains"
+    },
+    {
+      "source": "home",
+      "target": "maya",
+      "label": "contains"
+    }
+  ]
 }

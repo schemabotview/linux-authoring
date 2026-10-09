@@ -1,0 +1,191 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "id": "sec-001",
+      "width": 1440,
+      "title": "Understanding Linux",
+      "nodes": 4,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 1440,
+      "title": "Know the boundary",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 1440,
+      "title": "Terminal \u2192 shell \u2192 command",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 1440,
+      "title": "Where am I looking?",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 1440,
+      "title": "Ask the right reference",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 1440,
+      "title": "Identify before acting",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 1440,
+      "title": "Pause \u2192 read \u2192 verify",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-001",
+      "width": 390,
+      "title": "Understanding Linux",
+      "nodes": 4,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 390,
+      "title": "Know the boundary",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 390,
+      "title": "Terminal \u2192 shell \u2192 command",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 390,
+      "title": "Where am I looking?",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 390,
+      "title": "Ask the right reference",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 390,
+      "title": "Identify before acting",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 390,
+      "title": "Pause \u2192 read \u2192 verify",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    }
+  ],
+  "date": "2026-10-09",
+  "environment": "Local Vite :5178; installed Google Chrome; Puppeteer",
+  "navigation": "Next button SEC-001 to SEC-002 and Shift+Left back passed",
+  "limitations": "Author checks only; user review, Linux execution and accessibility approval pending."
+}
