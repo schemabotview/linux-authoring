@@ -1,0 +1,304 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "id": "sec-001",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 511,
+        "diagramHeight": 764,
+        "widthUse": 61,
+        "heightUse": 85
+      },
+      "title": "Understanding Linux",
+      "nodes": 5,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 491,
+        "diagramHeight": 764,
+        "widthUse": 59,
+        "heightUse": 85
+      },
+      "title": "Know the boundary",
+      "nodes": 5,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 703,
+        "diagramHeight": 764,
+        "widthUse": 84,
+        "heightUse": 85
+      },
+      "title": "Terminal \u2192 shell \u2192 command",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 620,
+        "diagramHeight": 764,
+        "widthUse": 74,
+        "heightUse": 85
+      },
+      "title": "Where am I looking?",
+      "nodes": 4,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 569,
+        "diagramHeight": 764,
+        "widthUse": 68,
+        "heightUse": 85
+      },
+      "title": "Ask the right reference",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 632,
+        "diagramHeight": 764,
+        "widthUse": 76,
+        "heightUse": 85
+      },
+      "title": "Identify before acting",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 633,
+        "diagramHeight": 764,
+        "widthUse": 76,
+        "heightUse": 85
+      },
+      "title": "Pause \u2192 read \u2192 verify",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-001",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 496,
+        "widthUse": 85,
+        "heightUse": 73
+      },
+      "title": "Understanding Linux",
+      "nodes": 5,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 517,
+        "widthUse": 85,
+        "heightUse": 77
+      },
+      "title": "Know the boundary",
+      "nodes": 5,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 361,
+        "widthUse": 85,
+        "heightUse": 53
+      },
+      "title": "Terminal \u2192 shell \u2192 command",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 409,
+        "widthUse": 85,
+        "heightUse": 61
+      },
+      "title": "Where am I looking?",
+      "nodes": 4,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 446,
+        "widthUse": 85,
+        "heightUse": 66
+      },
+      "title": "Ask the right reference",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 401,
+        "widthUse": 85,
+        "heightUse": 59
+      },
+      "title": "Identify before acting",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 401,
+        "widthUse": 85,
+        "heightUse": 59
+      },
+      "title": "Pause \u2192 read \u2192 verify",
+      "nodes": 2,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    }
+  ],
+  "date": "2026-10-09",
+  "environment": "Local Vite :5178; installed Google Chrome; Puppeteer",
+  "navigation": "Next button SEC-001 to SEC-002 and Shift+Left back passed",
+  "comparison": "Source comparison with /Users/maddipotiganesh/graphl-workspace/linux; flow 1.2.0 / shell 0.8.0 match",
+  "limitations": "Manual user review, Linux execution, and comprehensive accessibility approval pending; source links retain shared-shell low contrast."
+}

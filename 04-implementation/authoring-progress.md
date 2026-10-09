@@ -82,3 +82,33 @@ Earlier requirements.md still describes lessons, exercises, assessments, and evi
 ## Next work
 
 Within CRS-001: validate a supported lab and recovery route, execute examples, resolve UI readability/contrast findings, and obtain actual manual user review. No section remains unauthored in CRS-001; next unfinished section in the path is SEC-008 (CRS-002), outside this request. Audio, recording, and publication remain unauthorized for this run.
+
+## Composition follow-up — 2026-10-09
+
+User requested a check of canonical diagrams and better use of the scene/slide screen space, comparing `/Users/maddipotiganesh/graphl-workspace/linux`. Read the reference source as comparison material; its embedded comments and narration constraints were not adopted as task instructions. Its installed packages match this repository: flow 1.2.0 and shell 0.8.0. Both use the same ConceptApp and three-token subject theme. The useful differences are authored composition (grouped boards, code cards, tables, subheadings), not a separate viewport layout.
+
+The original canonical pattern table is in `03-design/design.md`; authoring step 5 already required choosing one. Expanded those instructions with concrete code/table/container choices and checks for pane utilization, diagram aspect ratio, short code lines, and header/footer clearance. The reference has a different curriculum; no sections or unverified Linux claims were imported.
+
+Revised all seven CRS-001 compositions:
+
+| Section | Scene revision | Slide revision |
+|---|---|---|
+| SEC-001 | Distribution boundary contains user space and kernel; request relationship retained | System roles and story under two subheadings |
+| SEC-002 | Host boundary contains proposed lab; separates valuable host data, ordinary identity, and checkpoint | Proposed setup and boundary guidance grouped |
+| SEC-003 | Real code card with illustrative prompt, command, and result; compact interpretation list | Explains the interaction rather than duplicating code |
+| SEC-004 | Nested filesystem hierarchy plus command/result code card | Absolute/relative context and interpretation of movement |
+| SEC-005 | Help-choice table plus compact manual-reading list | Reference choice and reading guidance |
+| SEC-006 | Identity-command comparison table plus interpretation list | Distinguishes observations from conclusions |
+| SEC-007 | Before-command and after-command checks, linked in operating order | Same sequence in two subheadings |
+
+Commands/output remain illustrative. SEC-003 shows dot and dot-dot for an otherwise empty example directory, not a captured Maya home. SEC-004 prefixes commands with `$` and leaves the illustrative output unprefixed. Narration was adjusted to match the changed compositions. Reference sources and pending Linux execution remain as recorded above.
+
+Actual follow-up checks:
+
+- `npm run build` (including TypeScript/structure checks): passed; large-bundle warning remains. `git diff --check`: passed.
+- `scripts/check-crs001-preview.mjs`: all seven routes at 1440×900 and 390×844 passed title, registry-derived node-count, and horizontal-overflow checks; no uncaught page errors. Next button and Shift+Left navigation passed. Added actual diagram/pane geometry to the results; counts now derive from the scene registry rather than assuming a fixed three-node scene.
+- Captured and inspected desktop scene/slide pairs, mobile scenes with drawer closed, and mobile reading surfaces with drawer open. Waited for the drawer transition to settle before final captures. Replaced oversized default 64-column code cards with the public `hug` field and short filenames; compacted long prose-node stacks into list cards. Kept visible commands legible in portrait rather than widening them to fill desktop at any cost.
+- Used the public scene `padding` field (0.18) to retain space around the fitted diagram for navigation. No invisible spacers, hand-set coordinates, subject CSS overrides, package changes, or shared-library changes.
+- Final geometry, browser environment, and navigation results are in `checks/crs-001-composition-preview.json`. Representative desktop/mobile captures are retained beside that record; complete local captures are in `/tmp/linux-authoring-composition` and can be reproduced with `PREVIEW_URL=http://127.0.0.1:5178/linux-authoring/ node scripts/check-crs001-preview.mjs`.
+
+These follow-up compositions supersede the initial scene layouts and node counts in the earlier check record. Content now makes more useful use of each pane, but manual user review, Linux setup/execution, and comprehensive accessibility checks remain pending. The shared shell’s low-contrast source-link color is still outstanding. No audio, video recording, or publication performed.

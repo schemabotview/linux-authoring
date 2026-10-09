@@ -1,45 +1,54 @@
 import type { Scene } from '@graphlearning/flow'
 
-// Declarative relationships; the installed engine computes all positions.
+// Canonical composition; grouping and code/table cards carry meaning.
+// Positions and fit are computed by the installed engine.
 export const sec001Scene: Scene = {
   "id": "crs-001-sec-001-scene",
   "flow": "TB",
+  "padding": 0.18,
   "nodes": [
     {
-      "id": "userspace",
-      "label": "User space",
-      "pattern": "service",
-      "flow": "TB",
+      "id": "distribution",
+      "label": "Linux distribution",
+      "pattern": "group",
       "children": [
         {
-          "id": "shell",
-          "label": "Shell",
-          "sub": "Interprets commands",
-          "pattern": "service",
-          "icon": "none"
+          "id": "userspace",
+          "label": "User space",
+          "pattern": "user",
+          "children": [
+            {
+              "id": "shell",
+              "label": "Shell",
+              "sub": "Interprets commands",
+              "pattern": "user",
+              "icon": "terminal"
+            },
+            {
+              "id": "apps",
+              "label": "Applications",
+              "sub": "Editors and services",
+              "pattern": "user",
+              "icon": "appwindow"
+            }
+          ]
         },
         {
-          "id": "apps",
-          "label": "Applications",
-          "sub": "Editors and services",
+          "id": "kernel",
+          "label": "Linux kernel",
+          "sub": "Memory and device access",
           "pattern": "service",
-          "icon": "none"
+          "icon": "cpu"
+        }
+      ],
+      "edges": [
+        {
+          "source": "userspace",
+          "target": "kernel",
+          "label": "requests"
         }
       ]
-    },
-    {
-      "id": "kernel",
-      "label": "Linux kernel",
-      "sub": "Resources and devices",
-      "pattern": "service",
-      "icon": "none"
     }
   ],
-  "edges": [
-    {
-      "source": "userspace",
-      "target": "kernel",
-      "label": "requests"
-    }
-  ]
+  "edges": []
 }

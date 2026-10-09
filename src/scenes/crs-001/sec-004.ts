@@ -1,42 +1,41 @@
 import type { Scene } from '@graphlearning/flow'
 
-// Declarative relationships; the installed engine computes all positions.
+// Canonical composition; grouping and code/table cards carry meaning.
+// Positions and fit are computed by the installed engine.
 export const sec004Scene: Scene = {
   "id": "crs-001-sec-004-scene",
   "flow": "TB",
+  "padding": 0.18,
   "nodes": [
     {
       "id": "root",
       "label": "/",
       "sub": "Filesystem root",
-      "pattern": "service",
-      "icon": "none"
+      "pattern": "storage",
+      "children": [
+        {
+          "id": "home",
+          "label": "/home",
+          "pattern": "storage",
+          "children": [
+            {
+              "id": "maya",
+              "label": "/home/maya",
+              "sub": "Working directory",
+              "pattern": "user",
+              "icon": "folder"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "home",
-      "label": "/home",
-      "sub": "Example parent",
-      "pattern": "service",
-      "icon": "none"
-    },
-    {
-      "id": "maya",
-      "label": "/home/maya",
-      "sub": "Example home",
-      "pattern": "service",
-      "icon": "none"
+      "id": "movement",
+      "kind": "code",
+      "filename": "Illustrative movement",
+      "label": "$ cd /home/maya\n$ cd ..\n$ pwd\n/home",
+      "hug": true
     }
   ],
-  "edges": [
-    {
-      "source": "root",
-      "target": "home",
-      "label": "contains"
-    },
-    {
-      "source": "home",
-      "target": "maya",
-      "label": "contains"
-    }
-  ]
+  "edges": []
 }
