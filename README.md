@@ -4,7 +4,7 @@ Linux course authoring project, based on the reusable seven-stage course authori
 
 ## Current status
 
-Stage 01: the proposed Linux course brief is awaiting confirmation. See `01-requirements/course-brief.md`. Requirements have not yet been generated.
+Stage 01: the Linux course brief is confirmed. The requirements draft is available at `01-requirements/requirements.md` for review before course planning.
 
 ## Workflow
 

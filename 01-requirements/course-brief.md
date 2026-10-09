@@ -1,8 +1,8 @@
 # Linux course brief
 
 - Topic: Linux
-- Version: 0.1
-- Status: Proposed — awaiting user confirmation
+- Version: 1.0
+- Status: Confirmed by the user on 2026-10-09
 - Date: 2026-10-09
 
 ## Audience
@@ -13,7 +13,7 @@ Beginners with no Linux experience, progressing toward independent Linux use, sy
 
 Basic computer use and file management. No prior Linux or programming knowledge. Environment setup will be defined during implementation.
 
-## Proposed practical outcomes
+## Confirmed practical outcomes
 
 Learners will be able to:
 
@@ -27,12 +27,12 @@ Learners will be able to:
 8. Apply basic system security practices and diagnose common failures.
 9. Complete practical administration and troubleshooting projects with documented evidence.
 
-## Proposed scope
+## Confirmed scope
 
 A staged progression from foundations through practical administration and advanced troubleshooting. Planning will determine module boundaries, study-time estimates, and whether advanced material should become separate tracks.
 
 Kernel development, deep distribution internals, and specialized enterprise infrastructure are proposed as future specialist tracks rather than prerequisites for the core progression.
 
-## Next decision
+## Next step
 
-Confirm or adjust this brief before generating requirements.md. This file records a proposal, not approved requirements. Linux distribution and version choices remain open for later stages.
+The user confirmed this brief on 2026-10-09. Generate and review requirements.md from this brief. Linux distribution and version choices remain open for later stages.
