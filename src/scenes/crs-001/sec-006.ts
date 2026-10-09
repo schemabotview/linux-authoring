@@ -1,11 +1,52 @@
-import type { Scene } from '@graphlearning/flow'
-import { mapBand } from '../system-map'
-
+import type { Scene } from '@graphlearning/flow';
+import { mapBand } from '../system-map';
 // Focused view of the shared master map; only this section’s detail is expanded.
 export const sec006Scene: Scene = {
-  id: 'crs-001-sec-006-scene',
-  padding: 0.18,
-  flow: 'TB',
-  nodes: [mapBand('distribution', [{"id": "identity", "label": "Inspect the system", "kind": "table", "headers": ["Command", "Identifies"], "values": [["uname -s", "Kernel name"], ["uname -r", "Kernel release"], ["cat /etc/os-release", "Distribution"], ["id", "User / groups"]]}, {"id": "interpret", "label": "Interpret before acting", "kind": "list", "framed": true, "pattern": "user", "items": ["Kernel ≠ distribution release", "Prompt ≠ proof of identity", "Inspect as an ordinary user", "Investigate permission errors"]}])],
-  edges: [],
-}
+    id: 'crs-001-sec-006-scene',
+    padding: 0.18,
+    flow: 'TB',
+    nodes: [
+        mapBand('distribution', [
+            {
+                "id": "identity", "label": "Inspect the system", "kind": "table", "headers": [
+                    "Command", "Identifies"
+                ], "values": [
+                    [
+                        "uname -s", "Kernel name"
+                    ], [
+                        "uname -r", "Kernel release"
+                    ], [
+                        "cat /etc/os-release", "Distribution"
+                    ], [
+                        "id", "User / groups"
+                    ]
+                ]
+            }, {
+                "id": "interpret", "label": "Interpret before acting", "kind": "list", "framed": true, "pattern": "user", "items": [
+                    "Kernel ≠ distribution release", "Prompt ≠ proof of identity", "Inspect as an ordinary user", "Investigate permission errors"
+                ]
+            }
+        ], {
+            cols: 2
+        }), {
+            "id": "context-6", "label": "Keep three observations separate", "pattern": "group", "children": [
+                {
+                    "id": "context-6-roles", "label": "Read the relationships", "pattern": "group", "cols": 3, "children": [
+                        {
+                            "id": "context-6-0", "label": "Kernel", "sub": "uname -s / uname -r", "pattern": "service", "icon": "none"
+                        }, {
+                            "id": "context-6-1", "label": "Distribution", "sub": "ID / VERSION_ID in os-release", "pattern": "group", "icon": "none"
+                        }, {
+                            "id": "context-6-2", "label": "Identity", "sub": "id · user and groups", "pattern": "user", "icon": "none"
+                        }
+                    ]
+                }, {
+                    "id": "context-6-checks", "label": "Interpret before proceeding", "kind": "list", "framed": true, "pattern": "user", "icon": "none", "items": [
+                        "No version numbers or IDs are assumed", "Missing command or file: investigate the environment", "Permission error: inspect intent before retrying"
+                    ]
+                }
+            ]
+        }
+    ],
+    edges: [],
+};

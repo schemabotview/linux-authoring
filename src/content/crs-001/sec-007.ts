@@ -19,7 +19,7 @@ import type { Section } from '../types'
   "pattern": "Diagnostic path",
   "sourceVersions": "Bash 5.3; GNU coreutils 9.11; man-db 2.13.1; Linux man-pages 6.19; os-release systemd 262~devel. Kernel/Debian/KVM web pages rolling; less page version not pinned. These are reference versions, not a validated lab.",
   "limitations": "Linux execution, setup/recovery validation, user review, comprehensive accessibility checks pending.",
-  "compositionReview": "2026-10-09: compared with /Users/maddipotiganesh/graphl-workspace/linux; use grouped diagrams, code/table cards, and slide subheadings. Layout rechecked separately in progress record.",
+  "compositionReview": "2026-10-09: expanded focused scene with grouped context and interpretation panel; browser checks recorded in progress. 2026-10-09: compared with /Users/maddipotiganesh/graphl-workspace/linux; use grouped diagrams, code/table cards, and slide subheadings. Layout rechecked separately in progress record.",
   "mapView": {
     "master": "linux-system-map",
     "layers": [
