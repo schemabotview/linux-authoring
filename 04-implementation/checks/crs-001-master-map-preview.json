@@ -1,0 +1,340 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "id": "sec-001",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 497,
+        "diagramHeight": 764,
+        "widthUse": 59,
+        "heightUse": 85
+      },
+      "title": "Understanding Linux",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 435,
+        "diagramHeight": 764,
+        "widthUse": 52,
+        "heightUse": 85
+      },
+      "title": "Know the boundary",
+      "nodes": 6,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 595,
+        "diagramHeight": 764,
+        "widthUse": 71,
+        "heightUse": 85
+      },
+      "title": "Terminal \u2192 shell \u2192 command",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 448,
+        "diagramHeight": 764,
+        "widthUse": 54,
+        "heightUse": 85
+      },
+      "title": "Where am I looking?",
+      "nodes": 6,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 498,
+        "diagramHeight": 764,
+        "widthUse": 60,
+        "heightUse": 85
+      },
+      "title": "Ask the right reference",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 584,
+        "diagramHeight": 764,
+        "widthUse": 70,
+        "heightUse": 85
+      },
+      "title": "Identify before acting",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 1440,
+      "geometry": {
+        "sceneWidth": 835,
+        "sceneHeight": 900,
+        "diagramWidth": 542,
+        "diagramHeight": 764,
+        "widthUse": 65,
+        "heightUse": 85
+      },
+      "title": "Pause \u2192 read \u2192 verify",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 900,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "sec-001",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 510,
+        "widthUse": 85,
+        "heightUse": 76
+      },
+      "title": "Understanding Linux",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-002",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 326,
+        "diagramHeight": 573,
+        "widthUse": 84,
+        "heightUse": 85
+      },
+      "title": "Know the boundary",
+      "nodes": 6,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-003",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 426,
+        "widthUse": 85,
+        "heightUse": 63
+      },
+      "title": "Terminal \u2192 shell \u2192 command",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-004",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 566,
+        "widthUse": 85,
+        "heightUse": 84
+      },
+      "title": "Where am I looking?",
+      "nodes": 6,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-005",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 509,
+        "widthUse": 85,
+        "heightUse": 75
+      },
+      "title": "Ask the right reference",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-006",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 434,
+        "widthUse": 85,
+        "heightUse": 64
+      },
+      "title": "Identify before acting",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "id": "sec-007",
+      "width": 390,
+      "geometry": {
+        "sceneWidth": 390,
+        "sceneHeight": 675,
+        "diagramWidth": 332,
+        "diagramHeight": 468,
+        "widthUse": 85,
+        "heightUse": 69
+      },
+      "title": "Pause \u2192 read \u2192 verify",
+      "nodes": 3,
+      "overflow": false,
+      "panels": [
+        {
+          "scroll": 844,
+          "height": 844
+        }
+      ]
+    }
+  ],
+  "overview": [
+    {
+      "width": 1440,
+      "height": 900,
+      "nodes": 29,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 1728,
+      "nodes": 29,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "nodes": 29,
+      "overflow": false
+    }
+  ],
+  "poster": {
+    "status": 200,
+    "contentType": "image/png"
+  },
+  "date": "2026-10-09",
+  "preview": "http://localhost:5180/linux-authoring/",
+  "navigation": [
+    "Next section",
+    "Shift+Left",
+    "Overview link from SEC-003",
+    "Browser Back to SEC-003"
+  ],
+  "checks": [
+    "TypeScript and curriculum/reference structure passed",
+    "Production build passed; existing large-bundle warning",
+    "git diff --check passed"
+  ],
+  "limitations": [
+    "Dense overview is too small for ordinary mobile reading; use focused views or poster",
+    "Linux lab execution and human review pending"
+  ]
+}

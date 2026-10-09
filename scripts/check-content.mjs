@@ -1,8 +1,8 @@
 import { build } from 'esbuild'
 import { readFileSync } from 'node:fs'
 const manifest = JSON.parse(readFileSync('scripts/course-manifest.json', 'utf8'))
-const result = await build({ stdin: { contents: "export { COURSES } from './src/content'; export { SCENES } from './src/scenes'", resolveDir: process.cwd() }, bundle: true, platform: 'node', format: 'esm', write: false })
-const { COURSES, SCENES } = await import('data:text/javascript;base64,' + Buffer.from(result.outputFiles[0].text).toString('base64'))
+const result = await build({ stdin: { contents: "export { COURSES } from './src/content'; export { SCENES, REFERENCE_SCENES } from './src/scenes'", resolveDir: process.cwd() }, bundle: true, platform: 'node', format: 'esm', write: false })
+const { COURSES, SCENES, REFERENCE_SCENES } = await import('data:text/javascript;base64,' + Buffer.from(result.outputFiles[0].text).toString('base64'))
 const seen = new Set()
 for (const planned of manifest.courses) {
   const course = COURSES[planned.id]
@@ -24,4 +24,14 @@ for (const planned of manifest.courses) {
   })
 }
 if (Object.keys(COURSES).length !== manifest.courses.length || Object.keys(SCENES).length !== seen.size) throw new Error('Unexpected course or scene count')
+for (const [id, scene] of Object.entries(REFERENCE_SCENES)) {
+  if (id !== scene.id || SCENES[id]) throw new Error(`Invalid reference scene: ${id}`)
+  const ids = new Set()
+  const collect = nodes => nodes.forEach(node => { if (ids.has(node.id)) throw new Error(`Duplicate reference node: ${node.id}`); ids.add(node.id); collect(node.children ?? []) })
+  collect(scene.nodes)
+  const edges = es => es.forEach(edge => { if (!ids.has(edge.source) || !ids.has(edge.target)) throw new Error(`Invalid reference edge: ${id}`) })
+  const nested = nodes => nodes.forEach(node => { edges(node.edges ?? []); nested(node.children ?? []) })
+  edges(scene.edges); nested(scene.nodes)
+}
+console.log(`Reference scenes OK: ${Object.keys(REFERENCE_SCENES).length}; separate from curriculum.`)
 console.log(`Structure OK: ${Object.keys(COURSES).length} courses, ${seen.size} sections. Structure checks do not establish content or release readiness.`)

@@ -61,6 +61,16 @@ Read the learning-path central question, evolving story, and each course's drivi
 
 For Linux, the story follows a small team system through orientation, files, access, operations, communication and preservation, automation, and diagnosis. Maintain a compact continuity record of example users, hosts, directories, services, and sample data as these are selected; do not imply they are chosen already.
 
+## Shared master map and focused views
+
+User approved this model on 2026-10-09. `src/scenes/system-map.ts` is the shared source for layer IDs, exact labels, semantic colors, and the complete overview. Preserve applications/interfaces, services/runtime, the system-call boundary, kernel core, files/devices, and hardware; boot and distribution/administration are cross-cutting context. These are architectural groupings, not a mandatory request pipeline.
+
+Author section scenes with `mapBand` or `mapSummary`. Expand only the layer(s) needed for that section and keep example identities consistent. Do not paste the entire map into every section or invent a different meaning for its colors. SEC-001 summarizes user space, kernel, and hardware without teaching all later subsystems. Host/guest boundaries are orthogonal to user/kernel boundaries: each guest OS has its own view.
+
+The complete overview is an auxiliary reference at `#/linux-system-map`, resolved through ui-shell’s existing bare-scene route. It belongs to `REFERENCE_SCENES`, separate from the exact 50-section scene registry. Slide links expose it without adding a curriculum section or a second scene to a section’s runtime contract. Browser Back returns to the section; the shell’s existing Home/Esc returns to the catalog.
+
+Because ui-flow disables interactive pan/zoom, a dense overview is not approved as mobile teaching text. Each slide also links to `maps/linux-system-map.png`, a 1600×1920 poster rendered from that same scene, for opening at full size. Regenerate it whenever master-map content changes; do not edit the PNG as a competing source. Focused views remain the primary readable presentation on small screens. Screenshot generation is layout verification, not video recording or publication.
+
 ## Website and video composition
 
 The existing section view places a scene beside a slide in landscape and exposes the slide through a drawer in portrait. Navigation and audio controls belong to interactive mode; capture mode suppresses interactive chrome. Verify the actual installed version rather than relying on comments alone.

@@ -19,13 +19,20 @@ import type { Section } from '../types'
   "pattern": "Diagnostic path",
   "sourceVersions": "Bash 5.3; GNU coreutils 9.11; man-db 2.13.1; Linux man-pages 6.19; os-release systemd 262~devel. Kernel/Debian/KVM web pages rolling; less page version not pinned. These are reference versions, not a validated lab.",
   "limitations": "Linux execution, setup/recovery validation, user review, comprehensive accessibility checks pending.",
-  "compositionReview": "2026-10-09: compared with /Users/maddipotiganesh/graphl-workspace/linux; use grouped diagrams, code/table cards, and slide subheadings. Layout rechecked separately in progress record."
+  "compositionReview": "2026-10-09: compared with /Users/maddipotiganesh/graphl-workspace/linux; use grouped diagrams, code/table cards, and slide subheadings. Layout rechecked separately in progress record.",
+  "mapView": {
+    "master": "linux-system-map",
+    "layers": [
+      "applications"
+    ],
+    "purpose": "Focused section view; master overview is a reference, not another curriculum level"
+  }
 }
 */
 export const sec007: Section = {
   id: "sec-007",
   title: "Building Safe Command-Line Habits",
   scene: "crs-001-sec-007-scene",
-  slide: "## Pause → read → verify\n\n**Before Enter, check system, user, directory, command, and target.**\n\n### Before the command\nRead the whole line, including options and shell punctuation. A command recalled from history is a draft to inspect.\n\n### After the command\nRead errors. Stop and investigate; avoid blind retries with privilege. Verify the resulting state rather than trusting silence.\n\nAfter `cd /home/maya`, use `pwd` to check location. If `cd` fails, later relative paths still use the old directory.\n\nUse disposable lab data and validated recovery.\n\n[Bash reference](https://man7.org/linux/man-pages/man1/bash.1.html)",
+  slide: "## Pause → read → verify\n\n**Before Enter, check system, user, directory, command, and target.**\n\n### Before the command\nRead the whole line, including options and shell punctuation. A command recalled from history is a draft to inspect.\n\n### After the command\nRead errors. Stop and investigate; avoid blind retries with privilege. Verify the resulting state rather than trusting silence.\n\nAfter `cd /home/maya`, use `pwd` to check location. If `cd` fails, later relative paths still use the old directory.\n\nUse disposable lab data and validated recovery.\n\n[Bash reference](https://man7.org/linux/man-pages/man1/bash.1.html)\n\n[System map overview](#/linux-system-map) · [Readable poster](maps/linux-system-map.png)",
   narration: "We began by asking what we are interacting with and how we find our way. We can now name the kernel and user-space programs, distinguish the host from a proposed lab, read a simple command, locate a directory, find help, and inspect identity. The final scene groups that knowledge into checks before Enter and checks after the command. Before submitting a line, identify the system and user, confirm the working directory, and read the command and its target. Shell punctuation matters: a line can do more than its first command name suggests. A command recalled from history is only a starting point because today's context may differ. After a command, read errors and verify the relevant state. In our navigation example, pwd checks the resulting directory; it cannot certify every possible action. If cd fails, later relative paths still use the old location. Do not turn a permission error into an automatic privileged retry. Instead, return to the documentation and the intended boundary. This is how we move from recognizing commands to making deliberate choices. The next course uses these habits to organize the team's disposable practice files. Actual lab execution and recovery validation remain pending before those examples can be treated as tested instructions.",
 }

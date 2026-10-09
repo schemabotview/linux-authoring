@@ -6,11 +6,11 @@ import react from '@vitejs/plugin-react'
 // when two React copies meet (invalid-hook-call). The package declares them as peer deps and
 // externalises them, so it never carries its own React; dedupe is the belt to that braces.
 // jsx is automatic by default with @vitejs/plugin-react.
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/linux-authoring/' : '/',
+export default defineConfig({
+  base: '/linux-authoring/',
   plugins: [react()],
   resolve: {
     dedupe: ['react', 'react-dom', '@xyflow/react'],
   },
   server: { port: 5177 },
-}))
+})

@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 import { build } from 'esbuild';
-const bundle = await build({stdin:{contents:"export { SCENES } from './src/scenes'",resolveDir:process.cwd()},bundle:true,platform:'node',format:'esm',write:false});
-const {SCENES} = await import('data:text/javascript;base64,' + Buffer.from(bundle.outputFiles[0].text).toString('base64'));
+const bundle = await build({stdin:{contents:"export { SCENES, REFERENCE_SCENES } from './src/scenes'",resolveDir:process.cwd()},bundle:true,platform:'node',format:'esm',write:false});
+const {SCENES, REFERENCE_SCENES} = await import('data:text/javascript;base64,' + Buffer.from(bundle.outputFiles[0].text).toString('base64'));
 const countNodes = nodes => nodes.reduce((sum,node)=>sum+1+countNodes(node.children ?? []),0);
 import {mkdirSync,writeFileSync} from 'node:fs';
 const out=process.env.REVIEW_OUT ?? 'scripts/out/crs-001-review';mkdirSync(out,{recursive:true});
@@ -37,5 +37,26 @@ await page.click('button[aria-label="Next section (Shift+→)"]');
 await page.waitForFunction(()=>location.hash.endsWith('sec-002'));
 await page.keyboard.down('Shift');await page.keyboard.press('ArrowLeft');await page.keyboard.up('Shift');
 await page.waitForFunction(()=>location.hash.endsWith('sec-001'));
+// The overview is reached through a real section link, using the existing shell route.
+await page.setViewport({width:1440,height:900});
+await page.goto(`${process.env.PREVIEW_URL ?? 'http://127.0.0.1:5177/linux-authoring/'}#/crs-001-sec-003`,{waitUntil:'networkidle0'});
+await page.click('a[href="#/linux-system-map"]');
+await page.waitForFunction(()=>location.hash==='#/linux-system-map');
+const overview=[];
+for (const [width,height] of [[1440,900],[1440,1728],[390,844]]) {
+ await page.setViewport({width,height});await new Promise(r=>setTimeout(r,400));
+ const data=await page.evaluate(()=>({nodes:document.querySelectorAll('.react-flow__node').length,overflow:document.documentElement.scrollWidth>innerWidth,text:document.body.innerText}));
+ if(data.nodes!==countNodes(REFERENCE_SCENES['linux-system-map'].nodes)||data.overflow)throw new Error('Overview render mismatch');
+ overview.push({width,height,...data});await page.screenshot({path:`${out}/system-map-${width}-${height}.png`});
+}
+await page.goBack();await page.waitForFunction(()=>location.hash.endsWith('sec-003'));
+await page.setViewport({width:1600,height:1920});
+await page.goto(`${process.env.PREVIEW_URL ?? 'http://127.0.0.1:5177/linux-authoring/'}?capture=1#/linux-system-map`,{waitUntil:'networkidle0'});
+await new Promise(r=>setTimeout(r,400));
+await page.screenshot({path:`${out}/system-map-poster.png`});
+await page.goto(`${process.env.PREVIEW_URL ?? 'http://127.0.0.1:5177/linux-authoring/'}#/crs-001-sec-003`,{waitUntil:'networkidle0'});
+await page.waitForFunction(()=>location.hash.endsWith('sec-003'));
+const poster = await page.evaluate(async()=>{ const response=await fetch('maps/linux-system-map.png');return {status:response.status,contentType:response.headers.get('content-type')}; });
+if(poster.status!==200 || !poster.contentType?.startsWith('image/png'))throw new Error('Missing overview poster');
 if(errors.length) throw new Error(errors.join('\n'));
-writeFileSync(`${out}/results.json`,JSON.stringify({errors,results},null,2));console.log(JSON.stringify({errors,results:results.map(({text,...r})=>r)},null,2));await browser.close();
+writeFileSync(`${out}/results.json`,JSON.stringify({errors,results,overview,poster},null,2));console.log(JSON.stringify({errors,results:results.map(({text,...r})=>r)},null,2));await browser.close();

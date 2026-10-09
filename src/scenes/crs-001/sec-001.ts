@@ -1,54 +1,14 @@
 import type { Scene } from '@graphlearning/flow'
+import { mapSummary } from '../system-map'
 
-// Canonical composition; grouping and code/table cards carry meaning.
-// Positions and fit are computed by the installed engine.
+// Three relevant master-map bands; summaries keep the introduction readable.
 export const sec001Scene: Scene = {
-  "id": "crs-001-sec-001-scene",
-  "flow": "TB",
-  "padding": 0.18,
-  "nodes": [
-    {
-      "id": "distribution",
-      "label": "Linux distribution",
-      "pattern": "group",
-      "children": [
-        {
-          "id": "userspace",
-          "label": "User space",
-          "pattern": "user",
-          "children": [
-            {
-              "id": "shell",
-              "label": "Shell",
-              "sub": "Interprets commands",
-              "pattern": "user",
-              "icon": "terminal"
-            },
-            {
-              "id": "apps",
-              "label": "Applications",
-              "sub": "Editors and services",
-              "pattern": "user",
-              "icon": "appwindow"
-            }
-          ]
-        },
-        {
-          "id": "kernel",
-          "label": "Linux kernel",
-          "sub": "Memory and device access",
-          "pattern": "service",
-          "icon": "cpu"
-        }
-      ],
-      "edges": [
-        {
-          "source": "userspace",
-          "target": "kernel",
-          "label": "requests"
-        }
-      ]
-    }
+  id: 'crs-001-sec-001-scene',
+  padding: 0.18,
+  nodes: [
+    mapSummary('applications', ['Shell · interprets commands', 'Applications · editors/services', '↓ Requests via system calls']),
+    mapSummary('core', ['Linux kernel · manages resources', '↓ Manages device access']),
+    mapSummary('hardware', ['CPU · memory · devices', 'Physical or virtual resources']),
   ],
-  "edges": []
+  edges: [], // Downward request/access relationships are explicit in the summary text.
 }
