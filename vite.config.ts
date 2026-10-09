@@ -7,7 +7,7 @@ function courseNameHeader(code: string): string {
   if (code.split(original).length !== 2) {
     throw new Error('Review course-name eyebrow adapter after changing ui-shell version')
   }
-  return code.replace(original, 'eyebrow: `${v.title.toUpperCase()}`')
+  return code.replace(original, 'eyebrow: `${a ?? e.toUpperCase()} · ${v.title.replace(/^Linux\\s+/i, \'\').toUpperCase()}`')
 }
 
 // The render engine is the @graphlearning/flow package, not a local folder. `dedupe` keeps a single

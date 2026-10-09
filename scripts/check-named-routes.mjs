@@ -20,7 +20,7 @@ try {
           const rect = eyebrow?.getBoundingClientRect()
           return { header: eyebrow?.textContent, right: rect?.right, title: document.querySelector('.reel-head__title')?.textContent, nodes: document.querySelectorAll('.react-flow__node').length, overflow: document.documentElement.scrollWidth > innerWidth }
         })
-        if (result.header !== course.title.toUpperCase() || result.title !== section.title || !result.nodes || result.overflow || result.right > (width === 390 ? width - 48 : width)) throw new Error(`Named route failed: ${slug} at ${width}`)
+        if (result.header !== `LINUX · ${course.title.replace(/^Linux\s+/i, '').toUpperCase()}` || result.title !== section.title || !result.nodes || result.overflow || result.right > (width === 390 ? width - 48 : width)) throw new Error(`Named route failed: ${slug} at ${width}`)
         results.push({ slug, width, ...result })
       }
     }

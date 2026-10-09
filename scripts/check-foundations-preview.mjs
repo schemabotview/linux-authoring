@@ -30,7 +30,7 @@ for(const [width,height] of [[1440,900],[390,844]]) {
  const data=await page.evaluate(()=>({eyebrow:document.querySelector('.reel-head__eyebrow')?.textContent,title:document.querySelector('.slide-panel h2')?.textContent,links:document.querySelectorAll('.slide-panel a').length,nodes:document.querySelectorAll('.react-flow__node').length,overflow:document.documentElement.scrollWidth>innerWidth,slideGeometry:(()=>{const r=document.querySelector('.slide-panel__scaler').getBoundingClientRect();return {top:Math.round(r.top),bottom:Math.round(r.bottom),height:Math.round(r.height),viewportHeight:innerHeight}})(),panels:[...document.querySelectorAll('.slide-panel')].map(e=>({scroll:e.scrollHeight,height:e.clientHeight})),text:document.body.innerText}));
  if(width===1440 && (data.slideGeometry.top<24 || data.slideGeometry.bottom>height-24))throw new Error(`Slide clearance failed: ${id}`);
  await page.screenshot({path:`${out}/${id}-${width}.png`});results.push({id,width,geometry,...data});
- if(data.eyebrow!==COURSES['foundations'].title.toUpperCase() || data.links!==0 || !data.title || data.nodes!==countNodes(SCENES[section.scene].nodes) || data.overflow) throw new Error(`Rendering check failed: ${id} at ${width}`);
+ if(data.eyebrow!==`LINUX · ${COURSES.foundations.title.replace(/^Linux\s+/i, '').toUpperCase()}` || data.links!==0 || !data.title || data.nodes!==countNodes(SCENES[section.scene].nodes) || data.overflow) throw new Error(`Rendering check failed: ${id} at ${width}`);
  }
 }
 await page.goto(`${process.env.PREVIEW_URL ?? 'http://127.0.0.1:5177/linux-authoring/'}#/foundations-understanding-linux`,{waitUntil:'networkidle0'});
