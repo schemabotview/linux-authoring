@@ -15,26 +15,26 @@ Stage 01 requirements are approved. Stage 02 course planning is drafted: see `02
 3. Save the response as the stage output listed below. Review it before using it as input to the next stage.
 4. Continue in order, attaching the earlier documents requested by each prompt. A chat cannot read a local path unless filesystem access is actually available.
 5. Use the other model to review major drafts against their completion checklists. Resolve findings using sources and technical checks; model agreement alone does not establish correctness.
-6. Approve the course brief and pilot lesson before scaling production. Record release approval before publishing.
+6. Approve the course brief and review representative sections before scaling production. Record release approval before publishing.
 7. Use feedback to propose a revised requirements document and repeat affected stages.
 
 | Folder | Prompt | Generated document |
 |---|---|---|
 | 01-requirements | ai-prompt.md | requirements.md |
 | 02-planning | ai-prompt.md | course-plan.md |
-| 03-design | ai-prompt.md | design.md |
-| 04-implementation | ai-prompt.md | implementation.md |
+| 03-design | Adopted design; no AI prompt | design.md |
+| 04-implementation | ai-prompt.md authors courses section by section | implementation.md + source files + authoring-progress.md |
 | 05-test | ai-prompt.md | test-plan.md |
 | 06-deployment | ai-prompt.md | deployment.md |
 | 07-feedback | ai-prompt.md | feedback.md |
 
 ## Working conventions
 
-- Prompts are reusable instructions; generated documents are course-specific artifacts. This template intentionally contains no fabricated course outputs.
-- Preserve stable requirement, outcome, module, and lesson IDs across revisions.
+- Prompts are reusable instructions; generated documents are course-specific artifacts. Design and implementation guidance are reusable; implementation records and progress must be populated with actual subject-project results.
+- Preserve stable requirement, outcome, course, and section IDs across revisions.
 - Record input revisions, assumptions, and Draft/Approved status. An AI-generated checklist is not evidence that its checks ran.
-- Generate full lessons individually after approving the curriculum and design; `implementation.md` describes their production process.
-- Website content and video scripts should derive from the same approved lesson source.
+- Author courses section by section after reviewing the curriculum and adopted design; `implementation.md` describes their production process.
+- Website content and video scripts should derive from the same approved section source.
 - Keep credentials and personal learner information out of prompts and the public repository.
 - The deployment prompt creates a publishing plan. Actual deployment and video upload are separate actions.
 
@@ -76,3 +76,7 @@ Recording commands follow SQL: `record`, `record:reels`, `shots:4k`, `capture:sh
 Type checking, course/section/scene validation, and production build passed. Headless Chrome checks passed for catalog content, section scene rendering, and the mobile slide drawer with no uncaught page errors. These checks do not constitute final visual or accessibility review.
 
 Puppeteer's automatic browser download was skipped during setup; the browser check used installed Google Chrome. Recording requires a compatible Puppeteer browser, which can be installed separately when recording is needed. The production build currently reports a large JavaScript bundle; optimize after the rendering design is settled.
+
+## Design and implementation documentation
+
+Stage 03 records the adopted GraphL design in `03-design/design.md`; it has no generation prompt. Stage 04 documents implementation separately from authoring. Use `04-implementation/ai-prompt.md` for a target course or section, and record progress in `04-implementation/authoring-progress.md`.
