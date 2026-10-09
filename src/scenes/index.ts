@@ -1,14 +1,14 @@
 import type { Scene } from '@graphlearning/flow'
 import { systemMapScene } from './system-map'
-import { crs001Scenes } from './crs-001'
-import { crs002Scenes } from './crs-002'
-import { crs003Scenes } from './crs-003'
-import { crs004Scenes } from './crs-004'
-import { crs005Scenes } from './crs-005'
-import { crs006Scenes } from './crs-006'
-import { crs007Scenes } from './crs-007'
+import { foundationsScenes } from './foundations'
+import { filesAndShellScenes } from './files-and-shell'
+import { usersAndSecurityScenes } from './users-and-security'
+import { softwareAndServicesScenes } from './software-and-services'
+import { networkingAndStorageScenes } from './networking-and-storage'
+import { scriptingScenes } from './scripting'
+import { administrationScenes } from './administration'
 
-const ALL: Scene[] = [...crs001Scenes, ...crs002Scenes, ...crs003Scenes, ...crs004Scenes, ...crs005Scenes, ...crs006Scenes, ...crs007Scenes]
+const ALL: Scene[] = [...foundationsScenes, ...filesAndShellScenes, ...usersAndSecurityScenes, ...softwareAndServicesScenes, ...networkingAndStorageScenes, ...scriptingScenes, ...administrationScenes]
 export const SCENES: Record<string, Scene> = Object.fromEntries(ALL.map(scene => [scene.id, scene]))
 // Auxiliary reference scenes use the shell's existing bare-scene route.
 // Keep them separate so the 50-section registry remains an exact curriculum mapping.

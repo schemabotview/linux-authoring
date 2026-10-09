@@ -6,7 +6,7 @@
 - Date: 2026-10-09
 - Inputs: course-brief.md v1.0; requirements.md v1.0; user-approved planning structure from this conversation
 - Planning change: courses and sections only; aim for seven courses and five to nine sections per course; omit exercise, assessment, and evidence fields
-- Supersedes: course-plan.md v0.2; preserves CRS-001–007 and SEC-001–050
+- Supersedes: course-plan.md v0.2; preserves seven courses and 50 sections; numbered identifiers superseded by descriptive names on 2026-10-09
 
 ## Learning-path spine
 
@@ -28,17 +28,17 @@ Course and section counts are organizing preferences, not claims about a univers
 
 | Course | Title | Sections |
 |---|---|---:|
-| CRS-001 | Linux Foundations and Getting Started | 7 |
-| CRS-002 | Files, Text Processing, and the Shell | 7 |
-| CRS-003 | Users, Permissions, and Security Fundamentals | 7 |
-| CRS-004 | Software, Processes, Services, and Logs | 7 |
-| CRS-005 | Networking, Remote Access, and Storage | 8 |
-| CRS-006 | Shell Scripting and Automation | 7 |
-| CRS-007 | Linux Administration and Troubleshooting | 7 |
+| foundations | Linux Foundations and Getting Started | 7 |
+| files-and-shell | Files, Text Processing, and the Shell | 7 |
+| users-and-security | Users, Permissions, and Security Fundamentals | 7 |
+| software-and-services | Software, Processes, Services, and Logs | 7 |
+| networking-and-storage | Networking, Remote Access, and Storage | 8 |
+| scripting | Shell Scripting and Automation | 7 |
+| administration | Linux Administration and Troubleshooting | 7 |
 
 **Total: seven courses and 50 sections.**
 
-## CRS-001: Linux Foundations and Getting Started
+## foundations: Linux Foundations and Getting Started
 
 **Purpose:** Understand Linux and become comfortable working in a safe learning environment.
 
@@ -54,15 +54,15 @@ Course and section counts are organizing preferences, not claims about a univers
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-001 | Understanding Linux | Explain Linux, distributions, common uses, and the relationship between the kernel, shell, and applications. Introduce the system before manipulating it. | [LFS101 outline](https://training.linuxfoundation.org/training/introduction-to-linux/) |
-| SEC-002 | Understanding the Learning Environment | Introduce the learner environment, host versus lab boundaries, supported setup guidance, and safe recovery habits. Exact platforms will be selected during implementation. Establish safe boundaries before commands change state. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-003 | Getting Comfortable with the Terminal | Introduce the terminal, shell prompt, command structure, arguments, and basic interaction. Provide the interface used throughout the story. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-004 | Navigating the Filesystem | Explain the working directory, filesystem hierarchy, absolute and relative paths, and movement between directories. Locate team resources through that interface. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-005 | Finding Help and Documentation | Show how to discover command usage and interpret help, manuals, and relevant documentation. Enable independent discovery once navigation is familiar. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-006 | Inspecting the System | Introduce environment identity, basic system information, and the distinction between ordinary and privileged operations. Use navigation and help to identify the system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-007 | Building Safe Command-Line Habits | Bring together command reading, history, careful verification, error interpretation, and responsible use of the lab. Consolidate safe habits before working with team files. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| understanding-linux | Understanding Linux | Explain Linux, distributions, common uses, and the relationship between the kernel, shell, and applications. Introduce the system before manipulating it. | [LFS101 outline](https://training.linuxfoundation.org/training/introduction-to-linux/) |
+| understanding-the-learning-environment | Understanding the Learning Environment | Introduce the learner environment, host versus lab boundaries, supported setup guidance, and safe recovery habits. Exact platforms will be selected during implementation. Establish safe boundaries before commands change state. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| getting-comfortable-with-the-terminal | Getting Comfortable with the Terminal | Introduce the terminal, shell prompt, command structure, arguments, and basic interaction. Provide the interface used throughout the story. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| navigating-the-filesystem | Navigating the Filesystem | Explain the working directory, filesystem hierarchy, absolute and relative paths, and movement between directories. Locate team resources through that interface. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| finding-help-and-documentation | Finding Help and Documentation | Show how to discover command usage and interpret help, manuals, and relevant documentation. Enable independent discovery once navigation is familiar. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| inspecting-the-system | Inspecting the System | Introduce environment identity, basic system information, and the distinction between ordinary and privileged operations. Use navigation and help to identify the system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| building-safe-command-line-habits | Building Safe Command-Line Habits | Bring together command reading, history, careful verification, error interpretation, and responsible use of the lab. Consolidate safe habits before working with team files. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
 
-## CRS-002: Files, Text Processing, and the Shell
+## files-and-shell: Files, Text Processing, and the Shell
 
 **Purpose:** Use the shell to organize files and turn text into useful information.
 
@@ -74,19 +74,19 @@ Course and section counts are organizing preferences, not claims about a univers
 
 **Sequence rationale:** Begin with files and editing, then discovery and transformation, then streams and pipelines, and finally portable archives.
 
-**Prerequisites:** CRS-001.
+**Prerequisites:** foundations.
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-008 | Creating and Managing Files | Cover creating, copying, moving, renaming, and removing files and directories using disposable sample data. Create the working data for the story. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
-| SEC-009 | Reading and Editing Text | Cover inspecting text files, working with a text editor, and making understandable changes to sample configuration files. Make the working data readable and editable. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-010 | Finding Files and Searching Content | Explain file discovery, content searching, and selecting relevant results from directory trees and text. Locate relevant material before processing it. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-011 | Filtering and Transforming Text | Introduce selecting fields, sorting, counting, comparing, and transforming structured sample text. Turn located material into useful summaries. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
-| SEC-012 | Streams and Redirection | Explain standard input, output, errors, and controlling where command data flows. Explain data flow before combining commands. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-013 | Combining Commands with Pipelines | Show how commands cooperate in pipelines, how to inspect intermediate results, and how to recognize failures. Combine earlier transformations into workflows. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-014 | Archives and Compression | Cover packaging, inspecting, extracting, and verifying archives without confusing an archive with a complete backup strategy. Package the files and results for later transfer and recovery. | [GNU tar manual](https://www.gnu.org/software/tar/manual/) |
+| creating-and-managing-files | Creating and Managing Files | Cover creating, copying, moving, renaming, and removing files and directories using disposable sample data. Create the working data for the story. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
+| reading-and-editing-text | Reading and Editing Text | Cover inspecting text files, working with a text editor, and making understandable changes to sample configuration files. Make the working data readable and editable. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| finding-files-and-searching-content | Finding Files and Searching Content | Explain file discovery, content searching, and selecting relevant results from directory trees and text. Locate relevant material before processing it. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| filtering-and-transforming-text | Filtering and Transforming Text | Introduce selecting fields, sorting, counting, comparing, and transforming structured sample text. Turn located material into useful summaries. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
+| streams-and-redirection | Streams and Redirection | Explain standard input, output, errors, and controlling where command data flows. Explain data flow before combining commands. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| combining-commands-with-pipelines | Combining Commands with Pipelines | Show how commands cooperate in pipelines, how to inspect intermediate results, and how to recognize failures. Combine earlier transformations into workflows. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| archives-and-compression | Archives and Compression | Cover packaging, inspecting, extracting, and verifying archives without confusing an archive with a complete backup strategy. Package the files and results for later transfer and recovery. | [GNU tar manual](https://www.gnu.org/software/tar/manual/) |
 
-## CRS-003: Users, Permissions, and Security Fundamentals
+## users-and-security: Users, Permissions, and Security Fundamentals
 
 **Purpose:** Understand identities and control access responsibly.
 
@@ -98,19 +98,19 @@ Course and section counts are organizing preferences, not claims about a univers
 
 **Sequence rationale:** Move from identity to accounts and groups, then permission interpretation and changes, then privilege and integrated access review.
 
-**Prerequisites:** CRS-001 and CRS-002.
+**Prerequisites:** foundations and files-and-shell.
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-015 | Linux Identities and Privilege | Explain users, identity contexts, administrative privilege, and why access boundaries matter. Establish who is acting on the team system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-016 | Managing Users | Introduce user accounts, account information, and responsible account lifecycle changes in the lab. Give team members distinct identities. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-017 | Managing Groups | Explain group membership and using groups to organize shared access. Organize those identities for shared work. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-018 | Understanding File Permissions | Explain ownership and interpreting file and directory permission behavior. Explain access rules before changing them. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
-| SEC-019 | Changing Ownership and Access | Show deliberate ownership and permission changes with verification and least-privilege reasoning. Apply those rules to the shared files. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
-| SEC-020 | Managing Privileged Operations | Explain controlled elevation, the impact of administrative commands, and avoiding unnecessary privilege. Bound administrative changes to the system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-021 | Reviewing Access and Basic Security | Combine account, group, permission, and privilege knowledge to identify common access mistakes and improve a sample system. Combine identity and file knowledge into access review. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| linux-identities-and-privilege | Linux Identities and Privilege | Explain users, identity contexts, administrative privilege, and why access boundaries matter. Establish who is acting on the team system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| managing-users | Managing Users | Introduce user accounts, account information, and responsible account lifecycle changes in the lab. Give team members distinct identities. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| managing-groups | Managing Groups | Explain group membership and using groups to organize shared access. Organize those identities for shared work. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| understanding-file-permissions | Understanding File Permissions | Explain ownership and interpreting file and directory permission behavior. Explain access rules before changing them. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
+| changing-ownership-and-access | Changing Ownership and Access | Show deliberate ownership and permission changes with verification and least-privilege reasoning. Apply those rules to the shared files. | [Coreutils manual](https://www.gnu.org/software/coreutils/manual/) |
+| managing-privileged-operations | Managing Privileged Operations | Explain controlled elevation, the impact of administrative commands, and avoiding unnecessary privilege. Bound administrative changes to the system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| reviewing-access-and-basic-security | Reviewing Access and Basic Security | Combine account, group, permission, and privilege knowledge to identify common access mistakes and improve a sample system. Combine identity and file knowledge into access review. | [Manual-page collection](https://man7.org/linux/man-pages/) |
 
-## CRS-004: Software, Processes, Services, and Logs
+## software-and-services: Software, Processes, Services, and Logs
 
 **Purpose:** Manage installed software and investigate running system behavior.
 
@@ -122,19 +122,19 @@ Course and section counts are organizing preferences, not claims about a univers
 
 **Sequence rationale:** Establish trusted software sources before changes; understand processes before control and resource inspection; combine these observations in services and logs.
 
-**Prerequisites:** CRS-001 through CRS-003.
+**Prerequisites:** foundations through users-and-security.
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-022 | Understanding Software Sources | Explain packages, repositories, dependencies, and trusted software sources while noting distribution differences. Establish trust before installing team software. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-023 | Installing and Maintaining Software | Cover inspecting, installing, updating, and removing approved lab software with state verification. Manage software from those sources. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-024 | Understanding Processes | Explain process identity, relationships, execution state, and how running programs appear to system tools. Observe the programs installed earlier as running work. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-025 | Controlling Processes | Cover foreground and background work, job control, signals, and responsible process termination. Control that work deliberately. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-026 | Inspecting System Resources | Introduce CPU, memory, and resource observations and distinguishing evidence from assumptions about performance. Inspect the resources used by running work. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-027 | Managing Services | Explain service lifecycle, startup behavior, configuration changes, and checking actual service behavior in the supported environment. Organize long-running work as managed services. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-028 | Reading Logs and Diagnosing Operational Problems | Show how to connect symptoms, service state, resource observations, and log evidence when investigating common failures. Use logs to explain the behavior of those services. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| understanding-software-sources | Understanding Software Sources | Explain packages, repositories, dependencies, and trusted software sources while noting distribution differences. Establish trust before installing team software. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| installing-and-maintaining-software | Installing and Maintaining Software | Cover inspecting, installing, updating, and removing approved lab software with state verification. Manage software from those sources. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| understanding-processes | Understanding Processes | Explain process identity, relationships, execution state, and how running programs appear to system tools. Observe the programs installed earlier as running work. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| controlling-processes | Controlling Processes | Cover foreground and background work, job control, signals, and responsible process termination. Control that work deliberately. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| inspecting-system-resources | Inspecting System Resources | Introduce CPU, memory, and resource observations and distinguishing evidence from assumptions about performance. Inspect the resources used by running work. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| managing-services | Managing Services | Explain service lifecycle, startup behavior, configuration changes, and checking actual service behavior in the supported environment. Organize long-running work as managed services. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| reading-logs-and-diagnosing-operational-problems | Reading Logs and Diagnosing Operational Problems | Show how to connect symptoms, service state, resource observations, and log evidence when investigating common failures. Use logs to explain the behavior of those services. | [Manual-page collection](https://man7.org/linux/man-pages/) |
 
-## CRS-005: Networking, Remote Access, and Storage
+## networking-and-storage: Networking, Remote Access, and Storage
 
 **Purpose:** Connect to Linux systems and manage sample data through its storage and recovery lifecycle.
 
@@ -146,20 +146,20 @@ Course and section counts are organizing preferences, not claims about a univers
 
 **Sequence rationale:** Establish network behavior before remote access and transfer; then explain where transferred data lives, storage attachment, backups, and verified restoration.
 
-**Prerequisites:** CRS-001 through CRS-004.
+**Prerequisites:** foundations through software-and-services.
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-029 | Networking Fundamentals | Introduce addresses, interfaces, routes, ports, and the basic path between communicating systems. Explain how the team reaches the system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-030 | Name Resolution and Connectivity | Explain name lookup and a systematic approach to checking connectivity and locating the failing stage. Locate connectivity failures before adding remote sessions. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-031 | Authorized Remote Access | Introduce remote sessions, authentication, host verification, and responsible connections between authorized lab endpoints. Use known network paths for authorized access. | [OpenSSH manuals](https://www.openssh.org/manual.html) |
-| SEC-032 | Remote File Transfer | Cover moving sample files between authorized systems and verifying transfer results. Move the team files over those connections. | [OpenSSH manuals](https://www.openssh.org/manual.html) |
-| SEC-033 | Understanding Storage and Filesystems | Explain storage devices, partitions at a conceptual level, filesystems, capacity, and usage inspection. Explain where transferred data resides. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-034 | Mounts and Disposable Storage | Show mount behavior and storage changes only within disposable lab resources, including recovery and cleanup. Attach disposable storage after understanding its role. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-035 | Backing Up Sample Data | Explain backup scope, destination choices, integrity checks, and producing recoverable copies of sample data. Preserve copies of the stored team data. | [GNU tar manual](https://www.gnu.org/software/tar/manual/) |
-| SEC-036 | Restoring Data and Resolving Storage Problems | Cover verified restoration and evidence-based diagnosis of bounded capacity, mount, and access failures. Complete preservation by demonstrating restoration. | [GNU tar manual](https://www.gnu.org/software/tar/manual/) |
+| networking-fundamentals | Networking Fundamentals | Introduce addresses, interfaces, routes, ports, and the basic path between communicating systems. Explain how the team reaches the system. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| name-resolution-and-connectivity | Name Resolution and Connectivity | Explain name lookup and a systematic approach to checking connectivity and locating the failing stage. Locate connectivity failures before adding remote sessions. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| authorized-remote-access | Authorized Remote Access | Introduce remote sessions, authentication, host verification, and responsible connections between authorized lab endpoints. Use known network paths for authorized access. | [OpenSSH manuals](https://www.openssh.org/manual.html) |
+| remote-file-transfer | Remote File Transfer | Cover moving sample files between authorized systems and verifying transfer results. Move the team files over those connections. | [OpenSSH manuals](https://www.openssh.org/manual.html) |
+| understanding-storage-and-filesystems | Understanding Storage and Filesystems | Explain storage devices, partitions at a conceptual level, filesystems, capacity, and usage inspection. Explain where transferred data resides. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| mounts-and-disposable-storage | Mounts and Disposable Storage | Show mount behavior and storage changes only within disposable lab resources, including recovery and cleanup. Attach disposable storage after understanding its role. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| backing-up-sample-data | Backing Up Sample Data | Explain backup scope, destination choices, integrity checks, and producing recoverable copies of sample data. Preserve copies of the stored team data. | [GNU tar manual](https://www.gnu.org/software/tar/manual/) |
+| restoring-data-and-resolving-storage-problems | Restoring Data and Resolving Storage Problems | Cover verified restoration and evidence-based diagnosis of bounded capacity, mount, and access failures. Complete preservation by demonstrating restoration. | [GNU tar manual](https://www.gnu.org/software/tar/manual/) |
 
-## CRS-006: Shell Scripting and Automation
+## scripting: Shell Scripting and Automation
 
 **Purpose:** Turn repeatable command-line work into understandable, reliable scripts.
 
@@ -171,19 +171,19 @@ Course and section counts are organizing preferences, not claims about a univers
 
 **Sequence rationale:** Start with scripts and data handling; introduce decisions, repetition, and functions; add diagnostics before integrating routine automation.
 
-**Prerequisites:** CRS-001 through CRS-005.
+**Prerequisites:** foundations through networking-and-storage.
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-037 | From Commands to Scripts | Introduce script structure, execution, readability, and turning an understood manual workflow into a script. Automate an operation already understood manually. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-038 | Variables, Parameters, and Quoting | Explain passing data into scripts and handling spaces, empty values, and special characters deliberately. Make the operation accept changing team inputs. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-039 | Conditions and Decisions | Cover conditions and branching based on input, file state, and command outcomes. Respond to different input and system states. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-040 | Loops and Repeated Work | Explain iteration over appropriate inputs while preserving correct handling of filenames and failure cases. Repeat the operation across relevant inputs. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-041 | Functions and Reuse | Introduce small functions, clear responsibilities, and organizing scripts without unnecessary complexity. Organize repeated script behavior for reuse. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-042 | Errors, Debugging, and Logging | Cover input validation, exit behavior, useful diagnostics, and debugging normal and failure paths. Make failures visible before relying on automation. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
-| SEC-043 | Automating Routine Administration | Combine scripting skills in repeatable reporting or sample-backup workflows, with scheduling concepts, visible results, and safe reruns. Combine earlier script features into routine operations. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| from-commands-to-scripts | From Commands to Scripts | Introduce script structure, execution, readability, and turning an understood manual workflow into a script. Automate an operation already understood manually. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| variables-parameters-and-quoting | Variables, Parameters, and Quoting | Explain passing data into scripts and handling spaces, empty values, and special characters deliberately. Make the operation accept changing team inputs. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| conditions-and-decisions | Conditions and Decisions | Cover conditions and branching based on input, file state, and command outcomes. Respond to different input and system states. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| loops-and-repeated-work | Loops and Repeated Work | Explain iteration over appropriate inputs while preserving correct handling of filenames and failure cases. Repeat the operation across relevant inputs. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| functions-and-reuse | Functions and Reuse | Introduce small functions, clear responsibilities, and organizing scripts without unnecessary complexity. Organize repeated script behavior for reuse. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| errors-debugging-and-logging | Errors, Debugging, and Logging | Cover input validation, exit behavior, useful diagnostics, and debugging normal and failure paths. Make failures visible before relying on automation. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
+| automating-routine-administration | Automating Routine Administration | Combine scripting skills in repeatable reporting or sample-backup workflows, with scheduling concepts, visible results, and safe reruns. Combine earlier script features into routine operations. | [Bash manual](https://www.gnu.org/software/bash/manual/) |
 
-## CRS-007: Linux Administration and Troubleshooting
+## administration: Linux Administration and Troubleshooting
 
 **Purpose:** Bring earlier skills together to investigate failures, recover behavior, and explain operational decisions.
 
@@ -195,17 +195,17 @@ Course and section counts are organizing preferences, not claims about a univers
 
 **Sequence rationale:** Introduce a diagnostic method, apply it to earlier access, service, network, and storage concerns, then integrate health review and an end-to-end handoff.
 
-**Prerequisites:** CRS-001 through CRS-006.
+**Prerequisites:** foundations through scripting.
 
 | Section | Title | Coverage and connection | References |
 |---|---|---|---|
-| SEC-044 | A Structured Troubleshooting Method | Explain symptoms, scope, hypotheses, evidence collection, controlled changes, and verification. Establish a common method before diagnosing incidents. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-045 | Diagnosing Access Problems | Revisit identities, groups, permissions, and remote access through coherent access-failure demonstrations. Revisit team access using the diagnostic method. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-046 | Diagnosing Process and Service Failures | Combine process state, service behavior, configuration, resource use, and logs to investigate operational failures. Apply the same method to running software. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-047 | Diagnosing Network Problems | Apply layered reasoning to addressing, routing, name resolution, ports, and authorized remote connectivity. Extend diagnosis to remote communication. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-048 | Diagnosing Storage and Recovery Problems | Bring together capacity, mounts, permissions, backups, and verified sample-data restoration. Extend diagnosis to stored data and recovery. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-049 | Reviewing Security and Operational Health | Combine least privilege, software maintenance, access review, exposure awareness, and evidence-based system checks. Combine findings into a broader operational review. | [Manual-page collection](https://man7.org/linux/man-pages/) |
-| SEC-050 | End-to-End Administration and Handoff | Demonstrate an integrated system workflow, routine automation, a bounded incident, recovery verification, and clear operational documentation. Connect the entire story through recovery and handoff. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| a-structured-troubleshooting-method | A Structured Troubleshooting Method | Explain symptoms, scope, hypotheses, evidence collection, controlled changes, and verification. Establish a common method before diagnosing incidents. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| diagnosing-access-problems | Diagnosing Access Problems | Revisit identities, groups, permissions, and remote access through coherent access-failure demonstrations. Revisit team access using the diagnostic method. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| diagnosing-process-and-service-failures | Diagnosing Process and Service Failures | Combine process state, service behavior, configuration, resource use, and logs to investigate operational failures. Apply the same method to running software. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| diagnosing-network-problems | Diagnosing Network Problems | Apply layered reasoning to addressing, routing, name resolution, ports, and authorized remote connectivity. Extend diagnosis to remote communication. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| diagnosing-storage-and-recovery-problems | Diagnosing Storage and Recovery Problems | Bring together capacity, mounts, permissions, backups, and verified sample-data restoration. Extend diagnosis to stored data and recovery. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| reviewing-security-and-operational-health | Reviewing Security and Operational Health | Combine least privilege, software maintenance, access review, exposure awareness, and evidence-based system checks. Combine findings into a broader operational review. | [Manual-page collection](https://man7.org/linux/man-pages/) |
+| end-to-end-administration-and-handoff | End-to-End Administration and Handoff | Demonstrate an integrated system workflow, routine automation, a bounded incident, recovery verification, and clear operational documentation. Connect the entire story through recovery and handoff. | [Manual-page collection](https://man7.org/linux/man-pages/) |
 
 ## Reference register and trust boundaries
 

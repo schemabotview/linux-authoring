@@ -9,7 +9,7 @@
 
 The Workspace contains sibling clones of ui-shell and ui-flow and a separate linux-authoring repository. The Linux app adapts SQL's React/TypeScript/Vite integration while preserving the seven authoring-stage folders. SQL-specific sections, scenes, narration audio, and notebooks were not copied.
 
-Seven courses and 50 sections are represented by clearly marked placeholders. Plan IDs CRS-001–007 and SEC-001–050 map to lowercase runtime IDs crs-001–007 and sec-001–050. Scene IDs combine the owning course and section. Keep these IDs stable to preserve routes and future audio paths.
+Seven courses and 50 sections use descriptive names, following SQL. Course directories include `foundations`, `files-and-shell`, and `scripting`; section files use title-based slugs such as `understanding-linux.ts`. Scene IDs combine course and section names. Foundations is authored; subsequent courses remain scaffolds. The 2026-10-09 naming migration supersedes the initial numbered-ID convention; historical records map through `curriculum-name-migration.json`.
 
 ## Repository structure
 
@@ -17,10 +17,10 @@ Seven courses and 50 sections are represented by clearly marked placeholders. Pl
 |---|---|
 | src/main.tsx | ConceptApp integration and stylesheet import order |
 | src/content/types.ts | Alias of shared Course and Section types |
-| src/content/crs-xxx/sec-xxx.ts | Section title, scene reference, slide, and narration |
-| src/content/crs-xxx/index.ts | Ordered sections within one course |
+| src/content/<course>/<section>.ts | Section title, scene reference, slide, and narration |
+| src/content/<course>/index.ts | Ordered sections within one course |
 | src/content/index.ts | Course registry in learning-path order |
-| src/scenes/crs-xxx/sec-xxx.ts | Declarative section scene |
+| src/scenes/<course>/<section>.ts | Declarative section scene |
 | src/scenes/index.ts | Global scene lookup |
 | src/theme.css | Subject brand tokens |
 | scripts/course-manifest.json | Plan coverage, source IDs, descriptions, and references; scaffold baseline |

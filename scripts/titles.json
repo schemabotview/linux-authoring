@@ -1,9 +1,9 @@
 {
-  "crs-001": "Linux Foundations and Getting Started",
-  "crs-002": "Files, Text Processing, and the Shell",
-  "crs-003": "Users, Permissions, and Security Fundamentals",
-  "crs-004": "Software, Processes, Services, and Logs",
-  "crs-005": "Networking, Remote Access, and Storage",
-  "crs-006": "Shell Scripting and Automation",
-  "crs-007": "Linux Administration and Troubleshooting"
+  "foundations": "Linux Foundations and Getting Started",
+  "files-and-shell": "Files, Text Processing, and the Shell",
+  "users-and-security": "Users, Permissions, and Security Fundamentals",
+  "software-and-services": "Software, Processes, Services, and Logs",
+  "networking-and-storage": "Networking, Remote Access, and Storage",
+  "scripting": "Shell Scripting and Automation",
+  "administration": "Linux Administration and Troubleshooting"
 }

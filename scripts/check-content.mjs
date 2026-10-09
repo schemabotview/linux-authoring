@@ -6,9 +6,9 @@ const { COURSES, SCENES, REFERENCE_SCENES } = await import('data:text/javascript
 const seen = new Set()
 for (const planned of manifest.courses) {
   const course = COURSES[planned.id]
-  if (!course || course.sections.length !== planned.sections.length) throw new Error(`Course mismatch: ${planned.id}`)
+  if (!course || course.title !== planned.title || /^crs-\d+$/i.test(course.id) || course.sections.length !== planned.sections.length) throw new Error(`Course mismatch: ${planned.id}`)
   course.sections.forEach((section, index) => {
-    if (section.id !== planned.sections[index].id || seen.has(section.id)) throw new Error(`Invalid section: ${section.id}`)
+    if (section.id !== planned.sections[index].id || section.title !== planned.sections[index].title || /^sec-\d+$/i.test(section.id) || seen.has(section.id)) throw new Error(`Invalid section: ${section.id}`)
     seen.add(section.id)
     const scene = SCENES[section.scene]
     if (!scene) throw new Error(`Missing scene: ${section.scene}`)

@@ -8,8 +8,8 @@ interactive pan/zoom controls are disabled by the installed engine.
 With the dev server running, regenerate and inspect the poster:
 
 ```sh
-PREVIEW_URL=http://127.0.0.1:5178/linux-authoring/ node scripts/check-crs001-preview.mjs
-cp scripts/out/crs-001-review/system-map-poster.png public/maps/linux-system-map.png
+PREVIEW_URL=http://127.0.0.1:5178/linux-authoring/ node scripts/check-foundations-preview.mjs
+cp scripts/out/foundations-review/system-map-poster.png public/maps/linux-system-map.png
 ```
 
 Adjust the port and `CHROME_PATH` to the local environment. The check also captures

@@ -1,0 +1,301 @@
+[
+  {
+    "previousCourse": "crs-001",
+    "course": "foundations",
+    "title": "Linux Foundations and Getting Started",
+    "sections": [
+      {
+        "previousSection": "sec-001",
+        "section": "understanding-linux",
+        "title": "Understanding Linux"
+      },
+      {
+        "previousSection": "sec-002",
+        "section": "understanding-the-learning-environment",
+        "title": "Understanding the Learning Environment"
+      },
+      {
+        "previousSection": "sec-003",
+        "section": "getting-comfortable-with-the-terminal",
+        "title": "Getting Comfortable with the Terminal"
+      },
+      {
+        "previousSection": "sec-004",
+        "section": "navigating-the-filesystem",
+        "title": "Navigating the Filesystem"
+      },
+      {
+        "previousSection": "sec-005",
+        "section": "finding-help-and-documentation",
+        "title": "Finding Help and Documentation"
+      },
+      {
+        "previousSection": "sec-006",
+        "section": "inspecting-the-system",
+        "title": "Inspecting the System"
+      },
+      {
+        "previousSection": "sec-007",
+        "section": "building-safe-command-line-habits",
+        "title": "Building Safe Command-Line Habits"
+      }
+    ]
+  },
+  {
+    "previousCourse": "crs-002",
+    "course": "files-and-shell",
+    "title": "Files, Text Processing, and the Shell",
+    "sections": [
+      {
+        "previousSection": "sec-008",
+        "section": "creating-and-managing-files",
+        "title": "Creating and Managing Files"
+      },
+      {
+        "previousSection": "sec-009",
+        "section": "reading-and-editing-text",
+        "title": "Reading and Editing Text"
+      },
+      {
+        "previousSection": "sec-010",
+        "section": "finding-files-and-searching-content",
+        "title": "Finding Files and Searching Content"
+      },
+      {
+        "previousSection": "sec-011",
+        "section": "filtering-and-transforming-text",
+        "title": "Filtering and Transforming Text"
+      },
+      {
+        "previousSection": "sec-012",
+        "section": "streams-and-redirection",
+        "title": "Streams and Redirection"
+      },
+      {
+        "previousSection": "sec-013",
+        "section": "combining-commands-with-pipelines",
+        "title": "Combining Commands with Pipelines"
+      },
+      {
+        "previousSection": "sec-014",
+        "section": "archives-and-compression",
+        "title": "Archives and Compression"
+      }
+    ]
+  },
+  {
+    "previousCourse": "crs-003",
+    "course": "users-and-security",
+    "title": "Users, Permissions, and Security Fundamentals",
+    "sections": [
+      {
+        "previousSection": "sec-015",
+        "section": "linux-identities-and-privilege",
+        "title": "Linux Identities and Privilege"
+      },
+      {
+        "previousSection": "sec-016",
+        "section": "managing-users",
+        "title": "Managing Users"
+      },
+      {
+        "previousSection": "sec-017",
+        "section": "managing-groups",
+        "title": "Managing Groups"
+      },
+      {
+        "previousSection": "sec-018",
+        "section": "understanding-file-permissions",
+        "title": "Understanding File Permissions"
+      },
+      {
+        "previousSection": "sec-019",
+        "section": "changing-ownership-and-access",
+        "title": "Changing Ownership and Access"
+      },
+      {
+        "previousSection": "sec-020",
+        "section": "managing-privileged-operations",
+        "title": "Managing Privileged Operations"
+      },
+      {
+        "previousSection": "sec-021",
+        "section": "reviewing-access-and-basic-security",
+        "title": "Reviewing Access and Basic Security"
+      }
+    ]
+  },
+  {
+    "previousCourse": "crs-004",
+    "course": "software-and-services",
+    "title": "Software, Processes, Services, and Logs",
+    "sections": [
+      {
+        "previousSection": "sec-022",
+        "section": "understanding-software-sources",
+        "title": "Understanding Software Sources"
+      },
+      {
+        "previousSection": "sec-023",
+        "section": "installing-and-maintaining-software",
+        "title": "Installing and Maintaining Software"
+      },
+      {
+        "previousSection": "sec-024",
+        "section": "understanding-processes",
+        "title": "Understanding Processes"
+      },
+      {
+        "previousSection": "sec-025",
+        "section": "controlling-processes",
+        "title": "Controlling Processes"
+      },
+      {
+        "previousSection": "sec-026",
+        "section": "inspecting-system-resources",
+        "title": "Inspecting System Resources"
+      },
+      {
+        "previousSection": "sec-027",
+        "section": "managing-services",
+        "title": "Managing Services"
+      },
+      {
+        "previousSection": "sec-028",
+        "section": "reading-logs-and-diagnosing-operational-problems",
+        "title": "Reading Logs and Diagnosing Operational Problems"
+      }
+    ]
+  },
+  {
+    "previousCourse": "crs-005",
+    "course": "networking-and-storage",
+    "title": "Networking, Remote Access, and Storage",
+    "sections": [
+      {
+        "previousSection": "sec-029",
+        "section": "networking-fundamentals",
+        "title": "Networking Fundamentals"
+      },
+      {
+        "previousSection": "sec-030",
+        "section": "name-resolution-and-connectivity",
+        "title": "Name Resolution and Connectivity"
+      },
+      {
+        "previousSection": "sec-031",
+        "section": "authorized-remote-access",
+        "title": "Authorized Remote Access"
+      },
+      {
+        "previousSection": "sec-032",
+        "section": "remote-file-transfer",
+        "title": "Remote File Transfer"
+      },
+      {
+        "previousSection": "sec-033",
+        "section": "understanding-storage-and-filesystems",
+        "title": "Understanding Storage and Filesystems"
+      },
+      {
+        "previousSection": "sec-034",
+        "section": "mounts-and-disposable-storage",
+        "title": "Mounts and Disposable Storage"
+      },
+      {
+        "previousSection": "sec-035",
+        "section": "backing-up-sample-data",
+        "title": "Backing Up Sample Data"
+      },
+      {
+        "previousSection": "sec-036",
+        "section": "restoring-data-and-resolving-storage-problems",
+        "title": "Restoring Data and Resolving Storage Problems"
+      }
+    ]
+  },
+  {
+    "previousCourse": "crs-006",
+    "course": "scripting",
+    "title": "Shell Scripting and Automation",
+    "sections": [
+      {
+        "previousSection": "sec-037",
+        "section": "from-commands-to-scripts",
+        "title": "From Commands to Scripts"
+      },
+      {
+        "previousSection": "sec-038",
+        "section": "variables-parameters-and-quoting",
+        "title": "Variables, Parameters, and Quoting"
+      },
+      {
+        "previousSection": "sec-039",
+        "section": "conditions-and-decisions",
+        "title": "Conditions and Decisions"
+      },
+      {
+        "previousSection": "sec-040",
+        "section": "loops-and-repeated-work",
+        "title": "Loops and Repeated Work"
+      },
+      {
+        "previousSection": "sec-041",
+        "section": "functions-and-reuse",
+        "title": "Functions and Reuse"
+      },
+      {
+        "previousSection": "sec-042",
+        "section": "errors-debugging-and-logging",
+        "title": "Errors, Debugging, and Logging"
+      },
+      {
+        "previousSection": "sec-043",
+        "section": "automating-routine-administration",
+        "title": "Automating Routine Administration"
+      }
+    ]
+  },
+  {
+    "previousCourse": "crs-007",
+    "course": "administration",
+    "title": "Linux Administration and Troubleshooting",
+    "sections": [
+      {
+        "previousSection": "sec-044",
+        "section": "a-structured-troubleshooting-method",
+        "title": "A Structured Troubleshooting Method"
+      },
+      {
+        "previousSection": "sec-045",
+        "section": "diagnosing-access-problems",
+        "title": "Diagnosing Access Problems"
+      },
+      {
+        "previousSection": "sec-046",
+        "section": "diagnosing-process-and-service-failures",
+        "title": "Diagnosing Process and Service Failures"
+      },
+      {
+        "previousSection": "sec-047",
+        "section": "diagnosing-network-problems",
+        "title": "Diagnosing Network Problems"
+      },
+      {
+        "previousSection": "sec-048",
+        "section": "diagnosing-storage-and-recovery-problems",
+        "title": "Diagnosing Storage and Recovery Problems"
+      },
+      {
+        "previousSection": "sec-049",
+        "section": "reviewing-security-and-operational-health",
+        "title": "Reviewing Security and Operational Health"
+      },
+      {
+        "previousSection": "sec-050",
+        "section": "end-to-end-administration-and-handoff",
+        "title": "End-to-End Administration and Handoff"
+      }
+    ]
+  }
+]

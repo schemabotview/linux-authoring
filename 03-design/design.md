@@ -39,7 +39,7 @@ The shared Section type contains id, title, scene, optional focus, slide, and na
 | Before and after | A focused change in state or access |
 | Diagnostic path | Symptom, observations, explanation, correction, and verification |
 
-The canonical pattern names describe the explanation, not a requirement to draw every idea as connected prose nodes. Use installed code cards for literal commands and illustrative results, tables for comparisons and reference choices, and containers for genuine boundaries or groups. For example, SEC-003 uses a command/result card, SEC-004 a filesystem hierarchy plus movement, and SEC-006 a table separating kernel, distribution, and identity. Use edges only when their direction has meaning; a list of choices does not need arrows.
+The canonical pattern names describe the explanation, not a requirement to draw every idea as connected prose nodes. Use installed code cards for literal commands and illustrative results, tables for comparisons and reference choices, and containers for genuine boundaries or groups. For example, getting-comfortable-with-the-terminal uses a command/result card, navigating-the-filesystem a filesystem hierarchy plus movement, and inspecting-the-system a table separating kernel, distribution, and identity. Use edges only when their direction has meaning; a list of choices does not need arrows.
 
 ### Composition and available space
 
@@ -65,9 +65,9 @@ For Linux, the story follows a small team system through orientation, files, acc
 
 User approved this model on 2026-10-09. `src/scenes/system-map.ts` is the shared source for layer IDs, exact labels, semantic colors, and the complete overview. Preserve applications/interfaces, services/runtime, the system-call boundary, kernel core, files/devices, and hardware; boot and distribution/administration are cross-cutting context. These are architectural groupings, not a mandatory request pipeline.
 
-Author section scenes with `mapBand` or `mapSummary`. Expand only the layer(s) needed for that section and keep example identities consistent. Do not paste the entire map into every section or invent a different meaning for its colors. SEC-001 summarizes user space, kernel, and hardware without teaching all later subsystems. Host/guest boundaries are orthogonal to user/kernel boundaries: each guest OS has its own view.
+Author section scenes with `mapBand` or `mapSummary`. Expand only the layer(s) needed for that section and keep example identities consistent. Do not paste the entire map into every section or invent a different meaning for its colors. understanding-linux summarizes user space, kernel, and hardware without teaching all later subsystems. Host/guest boundaries are orthogonal to user/kernel boundaries: each guest OS has its own view.
 
-The complete overview is an auxiliary reference at `#/linux-system-map`, resolved through ui-shell’s existing bare-scene route. It belongs to `REFERENCE_SCENES`, separate from the exact 50-section scene registry. Slide links expose it without adding a curriculum section or a second scene to a section’s runtime contract. Browser Back returns to the section; the shell’s existing Home/Esc returns to the catalog.
+The complete overview is an auxiliary reference at `#/linux-system-map`, resolved through ui-shell’s existing bare-scene route. It belongs to `REFERENCE_SCENES`, separate from the exact 50-section scene registry. The reference route remains directly addressable; user requested removal of learner-facing slide links. It adds no curriculum section or second scene to a section’s runtime contract. Browser Back returns to the section; the shell’s existing Home/Esc returns to the catalog.
 
 Because ui-flow disables interactive pan/zoom, a dense overview is not approved as mobile teaching text. Each slide also links to `maps/linux-system-map.png`, a 1600×1920 poster rendered from that same scene, for opening at full size. Regenerate it whenever master-map content changes; do not edit the PNG as a competing source. Focused views remain the primary readable presentation on small screens. Screenshot generation is layout verification, not video recording or publication.
 
@@ -93,3 +93,7 @@ These are review criteria, not claims that full accessibility or visual QA has p
 ## Decisions still open
 
 Final section compositions, Linux distribution and lab environment, finished palette, reference presentation improvements, audio generation, captions, video packaging, and any progressive scene behavior. The scaffolding does not settle these decisions.
+
+## Descriptive curriculum names
+
+User requested SQL-style descriptive names on 2026-10-09, superseding numbered course/section identifiers. Runtime IDs, source paths, exported names, manifest entries, and active plan use descriptive names. Historical progress/check records retain their original identifiers, mapped by `04-implementation/curriculum-name-migration.json`. Course header displays the course title through a guarded build/development adapter for pinned shell 0.8.0. A small `course-header.css` rule allows long titles to wrap clear of the portrait slide toggle; this explicit user-requested header adaptation is an exception to the three-token-only theme convention. No installed shared-library files are changed.

@@ -2,7 +2,7 @@
 
 ## Invocation
 
-Use in ChatGPT or Claude. Supply a course ID (for example CRS-001) or a section ID (for example SEC-003). If no target is supplied, choose the first unfinished course in approved plan order and state that choice. Do not ask the user to repeat course context.
+Use in ChatGPT or Claude. Supply a course ID (for example foundations) or a section ID (for example getting-comfortable-with-the-terminal). If no target is supplied, choose the first unfinished course in approved plan order and state that choice. Do not ask the user to repeat course context.
 
 With filesystem access, inspect and edit the actual repository. Without it, request the relevant source files and return clearly labeled replacement file contents; do not claim to save, execute, or commit anything.
 
