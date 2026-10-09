@@ -1,0 +1,405 @@
+{
+  "status": "scaffold",
+  "source": "02-planning/course-plan.md v0.3",
+  "courses": [
+    {
+      "id": "crs-001",
+      "planId": "CRS-001",
+      "title": "Linux Foundations and Getting Started",
+      "sections": [
+        {
+          "id": "sec-001",
+          "planId": "SEC-001",
+          "title": "Understanding Linux",
+          "coverage": "Explain Linux, distributions, common uses, and the relationship between the kernel, shell, and applications. Introduce the system before manipulating it.",
+          "references": "[LFS101 outline](https://training.linuxfoundation.org/training/introduction-to-linux/)"
+        },
+        {
+          "id": "sec-002",
+          "planId": "SEC-002",
+          "title": "Understanding the Learning Environment",
+          "coverage": "Introduce the learner environment, host versus lab boundaries, supported setup guidance, and safe recovery habits. Exact platforms will be selected during implementation. Establish safe boundaries before commands change state.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-003",
+          "planId": "SEC-003",
+          "title": "Getting Comfortable with the Terminal",
+          "coverage": "Introduce the terminal, shell prompt, command structure, arguments, and basic interaction. Provide the interface used throughout the story.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-004",
+          "planId": "SEC-004",
+          "title": "Navigating the Filesystem",
+          "coverage": "Explain the working directory, filesystem hierarchy, absolute and relative paths, and movement between directories. Locate team resources through that interface.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-005",
+          "planId": "SEC-005",
+          "title": "Finding Help and Documentation",
+          "coverage": "Show how to discover command usage and interpret help, manuals, and relevant documentation. Enable independent discovery once navigation is familiar.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-006",
+          "planId": "SEC-006",
+          "title": "Inspecting the System",
+          "coverage": "Introduce environment identity, basic system information, and the distinction between ordinary and privileged operations. Use navigation and help to identify the system.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-007",
+          "planId": "SEC-007",
+          "title": "Building Safe Command-Line Habits",
+          "coverage": "Bring together command reading, history, careful verification, error interpretation, and responsible use of the lab. Consolidate safe habits before working with team files.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        }
+      ]
+    },
+    {
+      "id": "crs-002",
+      "planId": "CRS-002",
+      "title": "Files, Text Processing, and the Shell",
+      "sections": [
+        {
+          "id": "sec-008",
+          "planId": "SEC-008",
+          "title": "Creating and Managing Files",
+          "coverage": "Cover creating, copying, moving, renaming, and removing files and directories using disposable sample data. Create the working data for the story.",
+          "references": "[Coreutils manual](https://www.gnu.org/software/coreutils/manual/)"
+        },
+        {
+          "id": "sec-009",
+          "planId": "SEC-009",
+          "title": "Reading and Editing Text",
+          "coverage": "Cover inspecting text files, working with a text editor, and making understandable changes to sample configuration files. Make the working data readable and editable.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-010",
+          "planId": "SEC-010",
+          "title": "Finding Files and Searching Content",
+          "coverage": "Explain file discovery, content searching, and selecting relevant results from directory trees and text. Locate relevant material before processing it.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-011",
+          "planId": "SEC-011",
+          "title": "Filtering and Transforming Text",
+          "coverage": "Introduce selecting fields, sorting, counting, comparing, and transforming structured sample text. Turn located material into useful summaries.",
+          "references": "[Coreutils manual](https://www.gnu.org/software/coreutils/manual/)"
+        },
+        {
+          "id": "sec-012",
+          "planId": "SEC-012",
+          "title": "Streams and Redirection",
+          "coverage": "Explain standard input, output, errors, and controlling where command data flows. Explain data flow before combining commands.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-013",
+          "planId": "SEC-013",
+          "title": "Combining Commands with Pipelines",
+          "coverage": "Show how commands cooperate in pipelines, how to inspect intermediate results, and how to recognize failures. Combine earlier transformations into workflows.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-014",
+          "planId": "SEC-014",
+          "title": "Archives and Compression",
+          "coverage": "Cover packaging, inspecting, extracting, and verifying archives without confusing an archive with a complete backup strategy. Package the files and results for later transfer and recovery.",
+          "references": "[GNU tar manual](https://www.gnu.org/software/tar/manual/)"
+        }
+      ]
+    },
+    {
+      "id": "crs-003",
+      "planId": "CRS-003",
+      "title": "Users, Permissions, and Security Fundamentals",
+      "sections": [
+        {
+          "id": "sec-015",
+          "planId": "SEC-015",
+          "title": "Linux Identities and Privilege",
+          "coverage": "Explain users, identity contexts, administrative privilege, and why access boundaries matter. Establish who is acting on the team system.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-016",
+          "planId": "SEC-016",
+          "title": "Managing Users",
+          "coverage": "Introduce user accounts, account information, and responsible account lifecycle changes in the lab. Give team members distinct identities.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-017",
+          "planId": "SEC-017",
+          "title": "Managing Groups",
+          "coverage": "Explain group membership and using groups to organize shared access. Organize those identities for shared work.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-018",
+          "planId": "SEC-018",
+          "title": "Understanding File Permissions",
+          "coverage": "Explain ownership and interpreting file and directory permission behavior. Explain access rules before changing them.",
+          "references": "[Coreutils manual](https://www.gnu.org/software/coreutils/manual/)"
+        },
+        {
+          "id": "sec-019",
+          "planId": "SEC-019",
+          "title": "Changing Ownership and Access",
+          "coverage": "Show deliberate ownership and permission changes with verification and least-privilege reasoning. Apply those rules to the shared files.",
+          "references": "[Coreutils manual](https://www.gnu.org/software/coreutils/manual/)"
+        },
+        {
+          "id": "sec-020",
+          "planId": "SEC-020",
+          "title": "Managing Privileged Operations",
+          "coverage": "Explain controlled elevation, the impact of administrative commands, and avoiding unnecessary privilege. Bound administrative changes to the system.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-021",
+          "planId": "SEC-021",
+          "title": "Reviewing Access and Basic Security",
+          "coverage": "Combine account, group, permission, and privilege knowledge to identify common access mistakes and improve a sample system. Combine identity and file knowledge into access review.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        }
+      ]
+    },
+    {
+      "id": "crs-004",
+      "planId": "CRS-004",
+      "title": "Software, Processes, Services, and Logs",
+      "sections": [
+        {
+          "id": "sec-022",
+          "planId": "SEC-022",
+          "title": "Understanding Software Sources",
+          "coverage": "Explain packages, repositories, dependencies, and trusted software sources while noting distribution differences. Establish trust before installing team software.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-023",
+          "planId": "SEC-023",
+          "title": "Installing and Maintaining Software",
+          "coverage": "Cover inspecting, installing, updating, and removing approved lab software with state verification. Manage software from those sources.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-024",
+          "planId": "SEC-024",
+          "title": "Understanding Processes",
+          "coverage": "Explain process identity, relationships, execution state, and how running programs appear to system tools. Observe the programs installed earlier as running work.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-025",
+          "planId": "SEC-025",
+          "title": "Controlling Processes",
+          "coverage": "Cover foreground and background work, job control, signals, and responsible process termination. Control that work deliberately.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-026",
+          "planId": "SEC-026",
+          "title": "Inspecting System Resources",
+          "coverage": "Introduce CPU, memory, and resource observations and distinguishing evidence from assumptions about performance. Inspect the resources used by running work.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-027",
+          "planId": "SEC-027",
+          "title": "Managing Services",
+          "coverage": "Explain service lifecycle, startup behavior, configuration changes, and checking actual service behavior in the supported environment. Organize long-running work as managed services.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-028",
+          "planId": "SEC-028",
+          "title": "Reading Logs and Diagnosing Operational Problems",
+          "coverage": "Show how to connect symptoms, service state, resource observations, and log evidence when investigating common failures. Use logs to explain the behavior of those services.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        }
+      ]
+    },
+    {
+      "id": "crs-005",
+      "planId": "CRS-005",
+      "title": "Networking, Remote Access, and Storage",
+      "sections": [
+        {
+          "id": "sec-029",
+          "planId": "SEC-029",
+          "title": "Networking Fundamentals",
+          "coverage": "Introduce addresses, interfaces, routes, ports, and the basic path between communicating systems. Explain how the team reaches the system.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-030",
+          "planId": "SEC-030",
+          "title": "Name Resolution and Connectivity",
+          "coverage": "Explain name lookup and a systematic approach to checking connectivity and locating the failing stage. Locate connectivity failures before adding remote sessions.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-031",
+          "planId": "SEC-031",
+          "title": "Authorized Remote Access",
+          "coverage": "Introduce remote sessions, authentication, host verification, and responsible connections between authorized lab endpoints. Use known network paths for authorized access.",
+          "references": "[OpenSSH manuals](https://www.openssh.org/manual.html)"
+        },
+        {
+          "id": "sec-032",
+          "planId": "SEC-032",
+          "title": "Remote File Transfer",
+          "coverage": "Cover moving sample files between authorized systems and verifying transfer results. Move the team files over those connections.",
+          "references": "[OpenSSH manuals](https://www.openssh.org/manual.html)"
+        },
+        {
+          "id": "sec-033",
+          "planId": "SEC-033",
+          "title": "Understanding Storage and Filesystems",
+          "coverage": "Explain storage devices, partitions at a conceptual level, filesystems, capacity, and usage inspection. Explain where transferred data resides.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-034",
+          "planId": "SEC-034",
+          "title": "Mounts and Disposable Storage",
+          "coverage": "Show mount behavior and storage changes only within disposable lab resources, including recovery and cleanup. Attach disposable storage after understanding its role.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-035",
+          "planId": "SEC-035",
+          "title": "Backing Up Sample Data",
+          "coverage": "Explain backup scope, destination choices, integrity checks, and producing recoverable copies of sample data. Preserve copies of the stored team data.",
+          "references": "[GNU tar manual](https://www.gnu.org/software/tar/manual/)"
+        },
+        {
+          "id": "sec-036",
+          "planId": "SEC-036",
+          "title": "Restoring Data and Resolving Storage Problems",
+          "coverage": "Cover verified restoration and evidence-based diagnosis of bounded capacity, mount, and access failures. Complete preservation by demonstrating restoration.",
+          "references": "[GNU tar manual](https://www.gnu.org/software/tar/manual/)"
+        }
+      ]
+    },
+    {
+      "id": "crs-006",
+      "planId": "CRS-006",
+      "title": "Shell Scripting and Automation",
+      "sections": [
+        {
+          "id": "sec-037",
+          "planId": "SEC-037",
+          "title": "From Commands to Scripts",
+          "coverage": "Introduce script structure, execution, readability, and turning an understood manual workflow into a script. Automate an operation already understood manually.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-038",
+          "planId": "SEC-038",
+          "title": "Variables, Parameters, and Quoting",
+          "coverage": "Explain passing data into scripts and handling spaces, empty values, and special characters deliberately. Make the operation accept changing team inputs.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-039",
+          "planId": "SEC-039",
+          "title": "Conditions and Decisions",
+          "coverage": "Cover conditions and branching based on input, file state, and command outcomes. Respond to different input and system states.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-040",
+          "planId": "SEC-040",
+          "title": "Loops and Repeated Work",
+          "coverage": "Explain iteration over appropriate inputs while preserving correct handling of filenames and failure cases. Repeat the operation across relevant inputs.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-041",
+          "planId": "SEC-041",
+          "title": "Functions and Reuse",
+          "coverage": "Introduce small functions, clear responsibilities, and organizing scripts without unnecessary complexity. Organize repeated script behavior for reuse.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-042",
+          "planId": "SEC-042",
+          "title": "Errors, Debugging, and Logging",
+          "coverage": "Cover input validation, exit behavior, useful diagnostics, and debugging normal and failure paths. Make failures visible before relying on automation.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        },
+        {
+          "id": "sec-043",
+          "planId": "SEC-043",
+          "title": "Automating Routine Administration",
+          "coverage": "Combine scripting skills in repeatable reporting or sample-backup workflows, with scheduling concepts, visible results, and safe reruns. Combine earlier script features into routine operations.",
+          "references": "[Bash manual](https://www.gnu.org/software/bash/manual/)"
+        }
+      ]
+    },
+    {
+      "id": "crs-007",
+      "planId": "CRS-007",
+      "title": "Linux Administration and Troubleshooting",
+      "sections": [
+        {
+          "id": "sec-044",
+          "planId": "SEC-044",
+          "title": "A Structured Troubleshooting Method",
+          "coverage": "Explain symptoms, scope, hypotheses, evidence collection, controlled changes, and verification. Establish a common method before diagnosing incidents.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-045",
+          "planId": "SEC-045",
+          "title": "Diagnosing Access Problems",
+          "coverage": "Revisit identities, groups, permissions, and remote access through coherent access-failure demonstrations. Revisit team access using the diagnostic method.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-046",
+          "planId": "SEC-046",
+          "title": "Diagnosing Process and Service Failures",
+          "coverage": "Combine process state, service behavior, configuration, resource use, and logs to investigate operational failures. Apply the same method to running software.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-047",
+          "planId": "SEC-047",
+          "title": "Diagnosing Network Problems",
+          "coverage": "Apply layered reasoning to addressing, routing, name resolution, ports, and authorized remote connectivity. Extend diagnosis to remote communication.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-048",
+          "planId": "SEC-048",
+          "title": "Diagnosing Storage and Recovery Problems",
+          "coverage": "Bring together capacity, mounts, permissions, backups, and verified sample-data restoration. Extend diagnosis to stored data and recovery.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-049",
+          "planId": "SEC-049",
+          "title": "Reviewing Security and Operational Health",
+          "coverage": "Combine least privilege, software maintenance, access review, exposure awareness, and evidence-based system checks. Combine findings into a broader operational review.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        },
+        {
+          "id": "sec-050",
+          "planId": "SEC-050",
+          "title": "End-to-End Administration and Handoff",
+          "coverage": "Demonstrate an integrated system workflow, routine automation, a bounded incident, recovery verification, and clear operational documentation. Connect the entire story through recovery and handoff.",
+          "references": "[Manual-page collection](https://man7.org/linux/man-pages/)"
+        }
+      ]
+    }
+  ]
+}

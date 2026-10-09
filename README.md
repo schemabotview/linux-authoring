@@ -41,3 +41,38 @@ Stage 01 requirements are approved. Stage 02 course planning is drafted: see `02
 ## Context is entered once
 
 Stage 01 establishes the confirmed course brief. Stages 02–07 inherit it from the requirements document and approved stage outputs. There are no repeated course-context forms. Each stage proposes its own relevant decisions, and material changes to the approved brief require confirmation.
+
+## Application scaffold
+
+SQL's application structure has been adapted for Linux. All seven courses and 50 sections are navigable placeholders; final scenes, slides, narration, audio, and visual design are not authored.
+
+- `src/content/`: one file per section, grouped by course.
+- `src/scenes/`: matching declarative scene files and registry.
+- `src/main.tsx`: shared GraphL shell integration.
+- `scripts/course-manifest.json`: scaffold coverage, source IDs, and reference links derived from course-plan.md v0.3. Update alongside future approved plan revisions.
+- `public/audio/`: reviewed narration assets, when generated.
+
+### Run locally
+
+```sh
+npm ci
+npm run dev
+npm run build
+npm run preview
+```
+
+Development runs on port 5177. Build output uses `/linux-authoring/` for the intended GitHub Pages repository path. Deployment is not configured or executed yet.
+
+`npm run check` validates types and course/section/scene structure. `node scripts/check-content.mjs --release` deliberately fails until placeholders and empty narration are replaced; it is a preliminary readiness guard, not full release QA.
+
+### Shared libraries
+
+This app pins published `@graphlearning/flow` 1.2.0 and `@graphlearning/shell` 0.8.0, with a lockfile. The cloned shell source reports 0.9.0, which was not published at scaffold time; the app uses the published 0.8.0 release, matching SQL. Sibling clones `../ui-flow` and `../ui-shell` are available for development but are not silently linked into the app. Shared rendering code is not copied into this repository.
+
+Recording commands follow SQL: `record`, `record:reels`, `shots:4k`, `capture:shots`, `thumb`, `gen:audio`, and `gen:desc`. Author and review narration before generating audio or recording. Recording also requires the shared toolchain's browser and media prerequisites. No SQL recordings, notebooks, branding, or audio were copied.
+
+### Scaffold verification
+
+Type checking, course/section/scene validation, and production build passed. Headless Chrome checks passed for catalog content, section scene rendering, and the mobile slide drawer with no uncaught page errors. These checks do not constitute final visual or accessibility review.
+
+Puppeteer's automatic browser download was skipped during setup; the browser check used installed Google Chrome. Recording requires a compatible Puppeteer browser, which can be installed separately when recording is needed. The production build currently reports a large JavaScript bundle; optimize after the rendering design is settled.
