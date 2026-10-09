@@ -27,7 +27,8 @@ for(const [width,height] of [[1440,900],[390,844]]) {
  const height=Math.max(...rects.map(r=>r.bottom))-Math.min(...rects.map(r=>r.top));
  return {sceneWidth:Math.round(area.width),sceneHeight:Math.round(area.height),diagramWidth:Math.round(width),diagramHeight:Math.round(height),widthUse:Math.round(width/area.width*100),heightUse:Math.round(height/area.height*100)};
  });
- const data=await page.evaluate(()=>({title:document.querySelector('.slide-panel h2')?.textContent,nodes:document.querySelectorAll('.react-flow__node').length,overflow:document.documentElement.scrollWidth>innerWidth,panels:[...document.querySelectorAll('.slide-panel')].map(e=>({scroll:e.scrollHeight,height:e.clientHeight})),text:document.body.innerText}));
+ const data=await page.evaluate(()=>({title:document.querySelector('.slide-panel h2')?.textContent,nodes:document.querySelectorAll('.react-flow__node').length,overflow:document.documentElement.scrollWidth>innerWidth,slideGeometry:(()=>{const r=document.querySelector('.slide-panel__scaler').getBoundingClientRect();return {top:Math.round(r.top),bottom:Math.round(r.bottom),height:Math.round(r.height),viewportHeight:innerHeight}})(),panels:[...document.querySelectorAll('.slide-panel')].map(e=>({scroll:e.scrollHeight,height:e.clientHeight})),text:document.body.innerText}));
+ if(width===1440 && (data.slideGeometry.top<24 || data.slideGeometry.bottom>height-24))throw new Error(`Slide clearance failed: ${id}`);
  await page.screenshot({path:`${out}/${id}-${width}.png`});results.push({id,width,geometry,...data});
  if(!data.title || data.nodes!==countNodes(SCENES[`crs-001-${id}-scene`].nodes) || data.overflow) throw new Error(`Rendering check failed: ${id} at ${width}`);
  }

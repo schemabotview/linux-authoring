@@ -8,7 +8,7 @@ export const sec002Scene: Scene = {
     nodes: [
         mapBand('hardware', [
             {
-                "id": "host", "label": "Everyday host", "pattern": "group", "cols": 2, "children": [
+                "id": "host", "label": "Everyday host", "pattern": "group", "flow": "LR", "children": [
                     {
                         "id": "host-data", "label": "Important host data", "sub": "Keep outside the practice system", "pattern": "storage", "icon": "folder"
                     }, {
